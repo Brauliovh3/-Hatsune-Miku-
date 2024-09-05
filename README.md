@@ -21,15 +21,13 @@
 
 ---------
 
-### ⭐ Activa En Cloud Starlights
+### 🌱 Activa En Corin plus el mejor Host del Mundo
 
-<a href="https://dash.starlights.uk"><img src="https://i.ibb.co/37T9Nnk/file.jpg" width="300" height="300" alt="Cloud Starlights"/></a>
+<a href="dash.corinplus.com"><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Cloud Starlights"/></a>
 
-- Dash: [dash.starlights.uk](https://dash.starlights.uk)
-- Panel: [cloud.starlights.uk](https://cloud.starlights.uk/)
-- Canal de WhatsApp: [【 ✯ Starlights Team - Oficial Chanel ✰ 】](https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S)
-
-[![Click Aquí](https://img.shields.io/badge/Soporte-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5218261000681)
+- Dash: [dash.starlights.uk](dash.corinplus.com)
+- Panel: [cloud.starlights.uk](ctrl.corinplus.com/)
+- Canal de WhatsApp: [【 ✯ Starlights Team - Oficial Chanel ✰ 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
 
 ---------
 
