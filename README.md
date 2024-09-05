@@ -10,20 +10,12 @@
         <a href="https://telegra.ph/file/cfef603c01b6ec05f7459.jpg"><img title="Author"    src="https://img.shields.io/badge/Author-(ㅎㅊDEPOOLㅊㅎ)-turquoise.svg?style=for-the-badge&logo=github"></a>
     </p>
     <p>
-        <a href="https://github.com/StarlightsTeamollowers"><img title="Followers" src="https://img.shields.io/github/followers/StarlightsTeam?color=blue&style=flat-square"></a>
-        <a href="https://github.com/StarlightsTeam/Ai-Hoshino/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/StarlightsTeam/Ai-Hoshino?color=red&style=flat-square"></a>
-        <a href="https://github.com/StarlightsTeam/Ai-Hoshino/network/members"><img title="Forks" src="http://img.shields.io/github/forks/StarlightsTeam/Ai-Hoshino?color=red&style=flat-square"></a>
-        <a href="#"><img src="https://img.shields.io/badge/MANTENIMIENTO-SI-blue.svg"</a>
-        <img src="https://img.shields.io/github/repo-size/StarlightsTeam/Ai-Hoshino" /> <br>
-   </p>
-   <p>
-</h1>
 
 ---------
 
 ### 🌱 Activa En CorinPlus el mejor Host del Mundo
 
-<a href="dash.corinplus.com"><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Corin Plus"/></a>
+<a href="dash.corinplus.com"><img src="https://i.ibb.co/LSf8HZ7/file.png" width="300" height="300" alt="Corin Plus"/></a>
 
 - Dash: [Dash CorinPlus](dash.corinplus.com)
 - Panel: [Panel CorinPlus](ctrl.corinplus.com/)
