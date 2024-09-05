@@ -23,7 +23,7 @@
 
 ### 🌱 Activa En Corin plus el mejor Host del Mundo
 
-<a href="dash.corinplus.com"><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Cloud Starlights"/></a>
+<a href="https://telegra.ph/file/cfef603c01b6ec05f7459.jpg"><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Cloud Starlights"/></a>
 
 - Dash: [dash.starlights.uk](dash.corinplus.com)
 - Panel: [cloud.starlights.uk](ctrl.corinplus.com/)
