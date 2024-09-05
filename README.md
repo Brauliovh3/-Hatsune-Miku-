@@ -49,7 +49,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/StarlightsTeam/Ai-Hoshino.git && cd Hatsune-Miku
+git clone https://github.com/Brauliovh3/Hatsune-Miku.git && cd hatsune-miku
 ```
 
 ```bash
