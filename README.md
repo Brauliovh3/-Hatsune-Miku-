@@ -23,11 +23,11 @@
 
 ### 🌱 Activa En Corin plus el mejor Host del Mundo
 
-<a href="https://telegra.ph/file/cfef603c01b6ec05f7459.jpg"><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Cloud Starlights"/></a>
+<a href=""><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Corin Plus"/></a>
 
-- Dash: [dash.starlights.uk](dash.corinplus.com)
-- Panel: [cloud.starlights.uk](ctrl.corinplus.com/)
-- Canal de WhatsApp: [【 ✯ Starlights Team - Oficial Chanel ✰ 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
+- Dash: [dash Corin plus](dash.corinplus.com)
+- Panel: [panel Corin plus](ctrl.corinplus.com/)
+- Canal de WhatsApp: [【 🌱 Corin plus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
 
 ---------
 
