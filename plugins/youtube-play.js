@@ -4,33 +4,30 @@ import yts from 'yt-search'
 import fetch from 'node-fetch' 
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
-    let lister = [
-        "mp3",
-        "mp4", 
-        "mp3doc",
-        "mp4doc"
-    ]
-    let [feature, inputs, inputs_, inputs__, inputs___] = text.split(" ")
-   // if (!lister.includes(feature)) return conn.reply(m.chat, `*🚩 Ingresa el formato en que deseas descargar más el titulo de un video o musica de YouTube.*\n\nEjemplo : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`,  m, fake,)
-	  if (command == "play" || command == 'play2') {
-            if (!text) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`,  m, rcanal,)
-    await m.react('🕓')
-    var res = await yts(text)
-    var vid = res.videos[0]
-    var q = '128kbps'
-const texto1 = `乂  Y O U T U B E   M U S I C\n
-	✩ *Título ∙* ${vid.title}\n
-        ✩ *Duración ∙* ${vid.timestamp}\n
-        ✩ *Visitas ∙* ${vid.views}\n
-        ✩ *Autor ∙* ${vid.author.name}\n
-        ✩ *Publicado ∙* ${vid.ago}\n
-        ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`.trim()
-		
-await conn.sendButton2(m.chat, texto1, botname, res.videos[0].thumbnail, [
-	['Audio 📀', `${usedPrefix}mp3 ${text}`],
-	['Video 🎥', `${usedPrefix}mp4 ${text}`]
-  ], null, [['Canal', `${canal}`]], m)
-	  }
+let lister = ["mp3", "yta", "audio", "ytv", "video", "vídeo", "mp4", "mp3doc", "ytadoc", "audiodoc", "mp4doc", "ytvdoc", "videodoc", "vídeodoc"]
+
+let [feature, inputs, inputs_, inputs__, inputs___] = text.split(" ")
+if (!lister.includes(feature)) return conn.reply(m.chat, `🚩 Ingresa el formato en que deseas descargar más el titulo de un video o musica de YouTube.\n\nEjemplo : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m, rcanal)
+if (lister.includes(feature)) {
+if (feature == "mp3" || feature == "yta" || feature == "audio") {
+if (!inputs) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
+await m.react('🕓')
+let res = await yts(text)
+let vid = res.videos[0]
+let q = '128kbps'
+let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
+	txt += `	✩   *Título* : ${vid.title}\n`
+	txt += `	✩   *Duración* : ${vid.timestamp}\n`
+	txt += `	✩   *Visitas* : ${vid.views}\n`
+	txt += `	✩   *Autor* : ${vid.author.name}\n`
+	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
+	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
+	txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
+await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
+try {
+let yt = await fg.yta(vid.url, q)
+let { title, dl_url, size } = yt
+let limit = 100
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
 
