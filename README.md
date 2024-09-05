@@ -1,7 +1,7 @@
 <h1 align="center">‧ 💙HATSUNE MIKU💙 ‧
 </p>
 <p>
-        <img src= "https://telegra.ph/file/89fa6a3c8e9cedda6f5ca.jpg">
+        <img src= "https://telegra.ph/file/5e7042bf17cde23989e71.jpg">
     </p>
     <p align="center">
         <a href="#"><img title="simple-whatsapp-bot" src="https://img.shields.io/badge/-SIMPLE--WHATSAPP--BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
