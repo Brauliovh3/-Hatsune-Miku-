@@ -17,8 +17,8 @@
 
 <a href="dash.corinplus.com"><img src="https://telegra.ph/file/cfef603c01b6ec05f7459.png" width="400" height="400" alt="CorinPlus"/></a>
 
-- Dash: [Dash CorinPlus](dash.corinplus.com)
-- Panel: [Panel CorinPlus](ctrl.corinplus.com/)
+- Dash: [Dash CorinPlus](https://dash.corinplus.com/home)
+- Panel: [Panel CorinPlus](https://ctrl.corinplus.com//)
 - Canal de WhatsApp: [【 🌱 CorinPlus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
 
 ---------
