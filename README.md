@@ -13,7 +13,7 @@
 
 ---------
 
-### 🌱 Activa En CorinPlus el mejor Host del Mundo
+### 🌱 Usa: CorinPlus el mejor Host del Mundo 🌱
 
 <a href="dash.corinplus.com"><img src="https://telegra.ph/file/cfef603c01b6ec05f7459.png" width="400" height="400" alt="CorinPlus"/></a>
 
