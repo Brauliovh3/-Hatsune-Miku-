@@ -23,11 +23,11 @@
 
 ### 🌱 Activa En CorinPlus el mejor Host del Mundo
 
-<a href=""><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Corin Plus"/></a>
+<a href="https://qu.ax/ZycD.png"><img src="https://i.ibb.co/LSf8HZ7/file.jpg" width="300" height="300" alt="Corin Plus"/></a>
 
-- Dash: [dash CorinPlus](dash.corinplus.com)
-- Panel: [panel CorinPlus](ctrl.corinplus.com/)
-- Canal de WhatsApp: [【 🌱 CoriPlus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
+- Dash: [Dash CorinPlus](dash.corinplus.com)
+- Panel: [Panel CorinPlus](ctrl.corinplus.com/)
+- Canal de WhatsApp: [【 🌱 CorinPlus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
 
 ---------
 
