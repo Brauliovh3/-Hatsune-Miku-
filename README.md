@@ -1,4 +1,4 @@
-<h1 align="center">‧ 【 ✯ Ai Hoshino - MD ✰ 】 ‧
+<h1 align="center">‧ 💙HATSUNE MIKU💙 ‧
 </p>
 <p>
         <img src= "https://telegra.ph/file/89fa6a3c8e9cedda6f5ca.jpg">
