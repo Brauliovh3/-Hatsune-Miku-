@@ -15,7 +15,7 @@
 
 ### 🌱 Activa En CorinPlus el mejor Host del Mundo
 
-<a href="dash.corinplus.com"><img src="https://i.ibb.co/LSf8HZ7/file.png" width="300" height="300" alt="Corin Plus"/></a>
+<a href="dash.corinplus.com"><img src="https://telegra.ph/file/cfef603c01b6ec05f7459.png" width="600" height="600" alt="CorinPlus"/></a>
 
 - Dash: [Dash CorinPlus](dash.corinplus.com)
 - Panel: [Panel CorinPlus](ctrl.corinplus.com/)
