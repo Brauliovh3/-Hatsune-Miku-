@@ -7,12 +7,12 @@ let handler = async (m, { conn, isPrems }) => {
   const tiempoEspera = 24 * 60 * 60
   if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
     const tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    conn.reply(m.chat, `🚩 Ya has realizado tu pedido gratis de hoy.\nRecuerda que solo puedes realizarlo 1 vez cada 24 horas.\n\n*Próximo Monto* : +${isPrems ? prem : free} 💫 XP\n*En* : ⏱ ${tiempoRestante}`, m, rcanal)
+    conn.reply(m.chat, `💙 Ya has realizado tu pedido gratis de hoy.\nRecuerda que solo puedes realizarlo 1 vez cada 24 horas.\n\n*Próximo Monto* : +${isPrems ? prem : free} 💫 XP\n*En* : ⏱ ${tiempoRestante}`, m, rcanal)
     return
   }
 
   global.db.data.users[m.sender].exp += isPrems ? prem : free
-  conn.reply(m.chat, `🚩 Felicidades 🎉, reclamaste *+${isPrems ? prem : free} 💫 XP*.`, m, rcanal)
+  conn.reply(m.chat, `💙 Felicidades 🎉, reclamaste *+${isPrems ? prem : free} 💫 XP*.`, m, rcanal)
 
   cooldowns[m.sender] = Date.now()
 }
