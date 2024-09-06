@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
   let bio = await conn.fetchStatus(who).catch(_ => 'undefined')
   let biot = bio.status?.toString() || 'Sin Info'
   let user = global.db.data.users[who]
-  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://i.ibb.co/P4nbf7g/file.jpg')
+  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://i.ibb.co/tqWV67y/file.jpg')
   let { exp, limit, name, registered, regTime, age, level } = global.db.data.users[who]
   let { min, xp, max } = xpRange(user.level, global.multiplier)
   let username = conn.getName(who)
@@ -21,16 +21,16 @@ let handler = async (m, { conn, usedPrefix, command}) => {
   let userNationality = userNationalityData ? `${userNationalityData.name} ${userNationalityData.emoji}` : 'Desconocido'
   let img = await (await fetch(`${pp}`)).buffer()
   let txt = ` –  *P E R F I L  -  U S E R*\n\n`
-      txt += `┌  ✩  *Nombre* : ${name}\n`
-      txt += `│  ✩  *Edad* : ${registered ? `${age} años` : '×'}\n`
-      txt += `│  ✩  *Numero* : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}\n`
-      txt += `│  ✩  *Nacionalidad* : ${userNationality}\n`
-      txt += `│  ✩  *Link* : wa.me/${who.split`@`[0]}\n`
-      txt += `│  ✩  *Estrellas* : ${limit}\n`
-      txt += `│  ✩  *Nivel* : ${level}\n`
-      txt += `│  ✩  *XP* : Total ${exp} (${user.exp - min}/${xp})\n`
-      txt += `│  ✩  *Premium* : ${prem ? 'Si' : 'No'}\n`
-      txt += `└  ✩  *Registrado* : ${registered ? 'Si': 'No'}`
+      txt += `┌  💙  *Nombre* : ${name}\n`
+      txt += `│  💙  *Edad* : ${registered ? `${age} años` : '×'}\n`
+      txt += `│  💙  *Numero* : ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}\n`
+      txt += `│  💙  *Nacionalidad* : ${userNationality}\n`
+      txt += `│  💙  *Link* : wa.me/${who.split`@`[0]}\n`
+      txt += `│  💙  *Cebollines* : ${limit}\n`
+      txt += `│  💙  *Nivel* : ${level}\n`
+      txt += `│  💙  *XP* : Total ${exp} (${user.exp - min}/${xp})\n`
+      txt += `│  💙  *Premium* : ${prem ? 'Si' : 'No'}\n`
+      txt += `└  💙  *Registrado* : ${registered ? 'Si': 'No'}`
   let mentionedJid = [who]
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m)
 }
