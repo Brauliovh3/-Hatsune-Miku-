@@ -20,8 +20,7 @@
 - Dash: [Dash CorinPlus](https://dash.corinplus.com/home)
 - Panel: [Panel CorinPlus](https://ctrl.corinplus.com//)
 - Canal de WhatsApp: [【 🌱 CorinPlus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
-
-💬 Grupo de WhatsApp: [🌱Group CorinPlus 🌱](https://chat.whatsapp.com/K235lkvaGvlGRQKYm26xZP)
+- Grupo de WhatsApp: [🌱Group CorinPlus 🌱](https://chat.whatsapp.com/K235lkvaGvlGRQKYm26xZP)
 
 ---------
 
