@@ -24,14 +24,14 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let url = await yt.audio['128kbps'].download()
   let title2 = await yt.title
   let txt = '`乂  W H A T M U S I C  -  T O O L S`\n\n'
-      txt += `	✩   *Titulo* : ${title}${artists ? `\n	✩   *Artists* : ${artists.map(v => v.name).join(', ')}` : ''}`
-      txt += `${album ? `\n	✩   *Album* : ${album.name}` : ''}${genres ? `\n	✩   *Genero* : ${genres.map(v => v.name).join(', ')}` : ''}\n`
-      txt += `	✩   *Fecha de lanzamiento* : ${release_date}\n\n`
-      txt += `> 🚩 *${textbot}*`
+      txt += `	💙   *Titulo* : ${title}${artists ? `\n	✩   *Artists* : ${artists.map(v => v.name).join(', ')}` : ''}`
+      txt += `${album ? `\n	💙   *Album* : ${album.name}` : ''}${genres ? `\n	💙   *Genero* : ${genres.map(v => v.name).join(', ')}` : ''}\n`
+      txt += `	💙  *Fecha de lanzamiento* : ${release_date}\n\n`
+      txt += `> 💙 *${textbot}*`
   await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
   await conn.sendFile(m.chat, url, title2 + '.mp3', null, m, false, { mimetype: 'audio/mpeg', asDocument: user.useDocument })
   await m.react('✅')
-  } else return conn.reply(m.chat, `🚩 Etiqueta un audio o video de poca duración con el comando *${usedPrefix + command}* para ver que música contiene.`, m, rcanal)
+  } else return conn.reply(m.chat, `💙 Etiqueta un audio o video de poca duración con el comando *${usedPrefix + command}* para ver que música contiene.`, m, rcanal)
 }
 handler.help = ['whatmusic *<audio/video>*']
 handler.tags = ['tools']
