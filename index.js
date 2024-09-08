@@ -25,7 +25,7 @@ const port = process.env.PORT || 8080;
 say('Hatsune\nMiku', {
 font: 'chrome',
 align: 'center',
-gradient: ['turquoise', 'turquoise']})
+gradient: ['cyan', 'cyan']})
 
 var isRunning = false
 
@@ -39,7 +39,7 @@ async function start(files) {
     say([process.argv[0], ...args].join(' '), {
       font: 'console',
       align: 'center',
-      gradient: ['turquoise', 'turquoise']
+      gradient: ['red', 'green']
     });
     
     setupMaster({
