@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, text }) => {
-if (!text) return conn.reply(m.chat, '🚩 Ingrese la url de un video de *Likee*.', m, rcanal)
+if (!text) return conn.reply(m.chat, '💙 Ingrese la url de un video de *Likee*.', m, rcanal)
 await m.react('🕓')
 try {
 let app = await fetch(`https://apis-starlights-team.koyeb.app/starlight/like-downloader?url=${text}`, { headers: { 'Content-Type': 'application/json' }})
