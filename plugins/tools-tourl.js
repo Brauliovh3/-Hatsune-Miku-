@@ -1,24 +1,44 @@
-const axios = require("axios");
-const fs = require("fs");
-const FormData = require("form-data");
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
+import fetch from 'node-fetch'
 
-async function shannzCdn(path) {
-  const form = new FormData();
-
-  const fileStream = fs.createReadStream(path);
-  form.append("file", fileStream);
-
+let handler = async (m) => {
+  let q = m.quoted ? m.quoted : m
+  let mime = (q.msg || q).mimetype || ''
+  if (!mime) return conn.reply(m.chat, '💙 Responde a una *Imagen* o *Vídeo.*', m, rcanal)
+  await m.react('🕓')
   try {
-    const response = await axios.post("https://api.shannmoderz.xyz/server/upload", form, {
-      headers: {
-        ...form.getHeaders(), 
-      },
-    });
+  let media = await q.download()
+  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+  let link = await (isTele ? uploadImage : uploadFile)(media)
+  let img = await (await fetch(`${link}`)).buffer()
+  let txt = '`-  T E L E G R A P H  -  U P L O A D E R`\n\n'
+      txt += `  *💙 Enlace* : ${link}\n`
+      txt += `  *💙 Acortado* : ${await shortUrl(link)}\n`
+      txt += `  *💙 Tamaño* : ${formatBytes(media.length)}\n`
+      txt += `  *💙 Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
+      txt += `💙 *${textbot}*`
 
-    return response.data
-  } catch (error) {
-    return error.message
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
+await m.react('✅')
+} catch {
+await m.react('✖️')
+}}
+handler.help = ['tourl']
+handler.tags = ['tools']
+handler.command = /^(tourl|upload)$/i
+export default handler
+
+function formatBytes(bytes) {
+  if (bytes === 0) {
+    return '0 B';
   }
+  const sizes = ['B', 'KB', 'MB', 'GB', 'TB']
+  const i = Math.floor(Math.log(bytes) / Math.log(1024))
+  return `${(bytes / 1024 ** i).toFixed(2)} ${sizes[i]}`;
 }
 
-module.exports = { shannzCdn }
+async function shortUrl(url) {
+	let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
+	return await res.text()
+}
