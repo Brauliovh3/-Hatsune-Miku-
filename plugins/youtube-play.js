@@ -4,10 +4,15 @@ import yts from 'yt-search'
 import fetch from 'node-fetch' 
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
-let lister = ["mp3", "yta", "audio", "ytv", "video", "vídeo", "mp4", "mp3doc", "ytadoc", "audiodoc", "mp4doc", "ytvdoc", "videodoc", "vídeodoc"]
+let lister = [
+        "mp3",
+        "mp4", 
+        "mp3doc",
+        "mp4doc"
+    ]
 
 let [feature, inputs, inputs_, inputs__, inputs___] = text.split(" ")
-if (!lister.includes(feature)) return conn.reply(m.chat, `💙 Ingresa el formato en que deseas descargar más el titulo de un video o musica de YouTube.\n\nEjemplo : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`, m, rcanal)
+if (!lister.includes(feature)) return conn.reply(m.chat, `*💙 Ingresa el formato en que deseas descargar más el titulo de un video o musica de YouTube.*\n\nEjemplo : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`,  m, rcanal,)
 if (lister.includes(feature)) {
 if (feature == "mp3" || feature == "yta" || feature == "audio") {
 if (!inputs) return conn.reply(m.chat, `💙 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
@@ -23,7 +28,13 @@ let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
 	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
 	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
 	txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
-await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
+await conn.sendButton2(m.chat, texto1, botname, res.videos[0].thumbnail, [
+	['Audio 📀', `${usedPrefix}mp3 ${text}`],
+	['Video 🎥', `${usedPrefix}mp4 ${text}`]
+	['Audio doc', `${usedPrefix}mp3doc ${text}`]
+	['Video doc', `${usedPrefix}mp4doc ${text}`]
+  ], null, [['Canal', `${canal}`]], m)
+	await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
 try {
 let yt = await fg.yta(vid.url, q)
 let { title, dl_url, size } = yt
