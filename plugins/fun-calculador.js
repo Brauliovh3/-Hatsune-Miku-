@@ -1,14 +1,14 @@
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-if (!text) return m.reply(`🚩 Etiqueta a una persona.`)
+if (!text) return m.reply(`💙 Etiqueta a una persona.`)
 if (command == 'gay2') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES 🏳️‍🌈* *${(500).getRandom()}%* *GAY*_
+_*${text.toUpperCase()}* *ES TOTALMENTE KABRO 🏳️‍🌈* *${(500).getRandom()}%* *GAY*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})}
 if (command == 'lesbiana') {
 conn.reply(m.chat, `
-_*${text.toUpperCase()}* *ES 🏳️‍🌈* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}*_
+_*${text.toUpperCase()}* *ES TOTALMENTE KABRO 🏳️‍🌈* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}*_
 `.trim(), m, m.mentionedJid ? {
 mentions: m.mentionedJid
 } : {})} 
