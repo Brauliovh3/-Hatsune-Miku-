@@ -18,7 +18,7 @@ await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 }
 handler.help = ['Cebollines']
 handler.tags = ['rpg']
-handler.command = ['coins', 'wallet', 'cartera', 'Cebollines', 'Cebollin', 'bal', 'balance']
+handler.command = ['cebollines', 'monedas', 'cartera', 'Cebollines', 'Cebollin', 'bal', 'balance']
 handler.register = true 
 export default handler
 
