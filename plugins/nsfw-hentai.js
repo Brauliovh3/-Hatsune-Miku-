@@ -1,7 +1,7 @@
 import { googleImage, pinterest } from '@bochilteam/scraper'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `🚩 El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando */nsfw on*`, m, rcanal)
+if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `💙 El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando */nsfw on*`, m, rcanal)
 
 await m.react('🕓')
 try {
