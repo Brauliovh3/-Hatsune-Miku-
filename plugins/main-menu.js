@@ -28,7 +28,7 @@ let tags = {
 
 const defaultMenu = {
   before: `
-          (ㅎㅊDEPOOLㅊㅎ)
+  Hatsune Miku By (ㅎㅊDEPOOLㅊㅎ)
 
 “ Hola *%name* soy *Hatsune Miku*, %greeting ”
  💙🌱██▓▒­░⡷⠂𝙷𝚊𝚝𝚜𝚞𝚗𝚎⠐⢾░▒▓██🌱💙
