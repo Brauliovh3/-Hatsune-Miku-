@@ -3,12 +3,12 @@ let linkRegex = /chat.whatsapp.com\/([0-9A-Za-z]{20,24})( [0-9]{1,3})?/i
 
 let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
 	
-	if (!text) return m.reply(`🚩 Ingresa el enlace del Grupo.`)
+	if (!text) return m.reply(`💙 Ingresa el enlace del Grupo.`)
     let [_, code, expired] = text.match(linkRegex) || []
-    if (!code) return m.reply('🚩 Enlace invalido.')
+    if (!code) return m.reply('💙 Enlace invalido.')
     let res = await conn.groupAcceptInvite(code)
     expired = Math.floor(Math.min(999, Math.max(1, isOwner ? isNumber(expired) ? parseInt(expired) : 0 : 3)))
-    m.reply(`🚩 Me uní correctamente al Grupo *${res}${expired ? `* Durante *${expired}* días.` : ''}`)
+    m.reply(`💙 Me uní correctamente al Grupo *${res}${expired ? `* Durante *${expired}* días.` : ''}`)
     let chats = global.db.data.chats[res]
     if (!chats) chats = global.db.data.chats[res] = {}
     if (expired) chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24
