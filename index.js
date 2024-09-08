@@ -25,60 +25,60 @@ const port = process.env.PORT || 8080;
 say('Hatsune\nMiku', {
 font: 'chrome',
 align: 'center',
-gradient: ['red', 'magenta']})
+gradient: ['turquoise', 'turquoise']})
 
 var isRunning = false
 
 async function start(files) {
-  if (isRunning) return
-  isRunning = true
+  if (isRunning) return;
+  isRunning = true;
   
   for (const file of files) {
-    const currentFilePath = new URL(import.meta.url).pathname
-    let args = [join(__dirname, file), ...process.argv.slice(2)]
+    const currentFilePath = new URL(import.meta.url).pathname;
+    let args = [join(__dirname, file), ...process.argv.slice(2)];
     say([process.argv[0], ...args].join(' '), {
       font: 'console',
       align: 'center',
-      gradient: ['red', 'magenta']
-    })
+      gradient: ['turquoise', 'turquoise']
+    });
     
     setupMaster({
       exec: args[0],
       args: args.slice(1),
-    })
+    });
     
-    let p = fork()
+    let p = fork();
     p.on('message', data => {
-      console.log('[RECEIVED]', data)
+      console.log('[RECEIVED]', data);
       switch (data) {
         case 'reset':
-          p.process.kill()
-          isRunning = false
-          start(files)
-          break
+          p.process.kill();
+          isRunning = false;
+          start(files);
+          break;
         case 'uptime':
-          p.send(process.uptime())
-          break
+          p.send(process.uptime());
+          break;
       }
-    })
+    });
     
     p.on('exit', (_, code) => {
-      isRunning = false
+      isRunning = false;
       console.error('Ocurrió un error inesperado:', code)
-      start(files)
+      start(files);
 
-      if (code === 0) return
+      if (code === 0) return;
       watchFile(args[0], () => {
-        unwatchFile(args[0])
-        start(files)
-      })
-    })
+        unwatchFile(args[0]);
+        start(files);
+      });
+    });
     
-    let opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
+    let opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse());
     if (!opts['test'])
       if (!rl.listenerCount()) rl.on('line', line => {
-        p.emit('message', line.trim())
-      })
+        p.emit('message', line.trim());
+      });
   }
 }
 
