@@ -47,7 +47,7 @@ const defaultMenu = {
 ╭────═[ *I N F O  -  U S E R* ]═─────⋆
 │╭───────────────···
 ┴│✯ *💙 Nombre* : %name
-✩│✯ *⭐ Estrellas* : %limit
+✩│✯ *🌱 Cebollines* : %limit
 ✩│✯ *📈 Nivel* : %level
 ┬│✯ *💫 XP* : %totalexp
 │╰────────────────···
@@ -61,7 +61,7 @@ const defaultMenu = {
   header: '╭───═[ `MENÚ メ %category` ]═────⋆\n│╭───────────────···',
   body: '✩│%cmd %islimit %isPremium\n',
   footer: '│╰────────────────···\n╰───────────═┅═──────────\n',
-  after: `> 🚩 ${textbot}`,
+  after: `> 💙 ${textbot}`,
 }
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
@@ -209,29 +209,29 @@ function clockString(ms) {
   var ase = new Date();
   var hour = ase.getHours();
 switch(hour){
-  case 0: hour = 'una linda noche 🌙'; break;
-  case 1: hour = 'una linda noche 💤'; break;
-  case 2: hour = 'una linda noche 🦉'; break;
-  case 3: hour = 'una linda mañana ✨'; break;
-  case 4: hour = 'una linda mañana 💫'; break;
-  case 5: hour = 'una linda mañana 🌅'; break;
-  case 6: hour = 'una linda mañana 🌄'; break;
-  case 7: hour = 'una linda mañana 🌅'; break;
-  case 8: hour = 'una linda mañana 💫'; break;
-  case 9: hour = 'una linda mañana ✨'; break;
-  case 10: hour = 'un lindo dia 🌞'; break;
-  case 11: hour = 'un lindo dia 🌨'; break;
-  case 12: hour = 'un lindo dia ❄'; break;
-  case 13: hour = 'un lindo dia 🌤'; break;
-  case 14: hour = 'una linda tarde 🌇'; break;
-  case 15: hour = 'una linda tarde 🥀'; break;
-  case 16: hour = 'una linda tarde 🌹'; break;
-  case 17: hour = 'una linda tarde 🌆'; break;
-  case 18: hour = 'una linda noche 🌙'; break;
-  case 19: hour = 'una linda noche 🌃'; break;
-  case 20: hour = 'una linda noche 🌌'; break;
-  case 21: hour = 'una linda noche 🌃'; break;
-  case 22: hour = 'una linda noche 🌙'; break;
-  case 23: hour = 'una linda noche 🌃'; break;
+  case 1: hour = 'una linda noche 🌙'; break;
+  case 2: hour = 'una linda noche 💤'; break;
+  case 3: hour = 'una linda noche 🦉'; break;
+  case 4: hour = 'una linda mañana ✨'; break;
+  case 5: hour = 'una linda mañana 💫'; break;
+  case 6: hour = 'una linda mañana 🌅'; break;
+  case 7: hour = 'una linda mañana 🌄'; break;
+  case 8: hour = 'una linda mañana 🌅'; break;
+  case 9: hour = 'una linda mañana 💫'; break;
+  case 10: hour = 'una linda mañana ✨'; break;
+  case 11: hour = 'un lindo dia 🌞'; break;
+  case 12: hour = 'un lindo dia 🌨'; break;
+  case 13: hour = 'un lindo dia ❄'; break;
+  case 14: hour = 'un lindo dia 🌤'; break;
+  case 15: hour = 'una linda tarde 🌇'; break;
+  case 16: hour = 'una linda tarde 🥀'; break;
+  case 17: hour = 'una linda tarde 🌹'; break;
+  case 18: hour = 'una linda tarde 🌆'; break;
+  case 19: hour = 'una linda noche 🌙'; break;
+  case 20: hour = 'una linda noche 🌃'; break;
+  case 21: hour = 'una linda noche 🌌'; break;
+  case 22: hour = 'una linda noche 🌃'; break;
+  case 23: hour = 'una linda noche 🌙'; break;
+  case 24: hour = 'una linda noche 🌃'; break;
 }
   var greeting = "espero que tengas " + hour;
