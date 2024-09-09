@@ -1,7 +1,5 @@
 import fg from 'api-dylux'
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import yts from 'yt-search'
-import { MessageType, Mimetype } from 'whatsapp-web.js'  // Asegúrate de instalar y configurar whatsapp-web.js
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     if (!text) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m)
@@ -22,10 +20,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     txt += `    ✩   *Autor* : ${vid.author.name}\n`
     txt += `    ✩   *Publicado* : ${formatTimeAgo(vid.ago)}\n`
     txt += `    ✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
-    txt += `*- ↻ El archivo está siendo procesado. . .*\n`
-
-    // Enviar la información básica
-    await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m)
+    txt += `*- ↻ Elige el formato de descarga.*\n`
 
     // Crear botones
     const buttons = [
@@ -36,7 +31,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     ]
 
     const buttonMessage = {
-        text: 'Elige el formato de descarga:',
+        text: txt,
         footer: 'Selecciona una opción para descargar el archivo.',
         buttons: buttons,
         headerType: 1
@@ -44,10 +39,11 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
 
     await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 
-    // Manejo de la respuesta del usuario
-    conn.on('message', async message => {
-        if (message.hasOwnProperty('buttonId')) {
-            const buttonId = message.buttonId
+    // Esperar la respuesta del usuario
+    const filter = (message) => message.key.fromMe || message.key.remoteJid === m.chat;
+    const collector = conn.on('message', async message => {
+        if (message.hasOwnProperty('buttonId') && message.buttonId) {
+            const buttonId = message.buttonId;
 
             try {
                 if (buttonId === 'download_audio') {
@@ -75,10 +71,12 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
                 }
 
                 await m.react('✅') // Indicador de éxito
+                collector.stop() // Detener la recolección de mensajes
             } catch (e) {
                 console.error(e)
                 await m.react('✖️') // Indicador de fallo
                 conn.reply(m.chat, `Ocurrió un error al procesar la solicitud.`, m)
+                collector.stop() // Detener la recolección de mensajes
             }
         }
     })
