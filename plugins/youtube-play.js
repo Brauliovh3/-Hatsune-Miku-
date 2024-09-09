@@ -12,7 +12,7 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     ]
     let [feature, inputs, inputs_, inputs__, inputs___] = text.split(" ")
    // if (!lister.includes(feature)) return conn.reply(m.chat, `*🚩 Ingresa el formato en que deseas descargar más el titulo de un video o musica de YouTube.*\n\nEjemplo : ${usedPrefix + command} *mp3* SUICIDAL-IDOL - ecstacy\n\nFormatos disponibles :\n${usedPrefix + command} *mp3*\n${usedPrefix + command} *mp3doc*\n${usedPrefix + command} *mp4*\n${usedPrefix + command} *mp4doc*`,  m, fake,)
-	  if (command == "play" || command == 'play2' || command == 'play3' || command == 'play4') {
+	  if (command == "play" || command == 'play2') {
             if (!text) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`,  m, rcanal,)
     await m.react('🕓')
     var res = await yts(text)
@@ -29,8 +29,8 @@ const texto1 = `乂  Y O U T U B E   M U S I C\n
 await conn.sendButton2(m.chat, texto1, botname, res.videos[0].thumbnail, [
 	['Audio 📀', `${usedPrefix}mp3 ${text}`],
 	['Video 🎥', `${usedPrefix}mp4 ${text}`]
-	['Audiodoc', `${usedPrefix}mp3doc ${text}`]
-	['Videodoc', `${usedPrefix}mp4doc ${text}`]
+	['mp3doc', `${usedPrefix}mp3doc ${text}`]
+	['mp4doc', `${usedPrefix}mp4doc ${text}`]
   ], null, [['Canal', `${canal}`]], m)
 	  }
   
