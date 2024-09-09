@@ -1,4 +1,4 @@
-<h1 align="center">‧ 💙HATSUNE MIKU💙 ‧
+<h1 align="center">‧ 💙HATSUNE-MIKU💙 ‧
 </p>
 <p>
         <img src= "https://telegra.ph/file/5e7042bf17cde23989e71.jpg">
