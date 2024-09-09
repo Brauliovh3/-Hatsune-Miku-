@@ -26,10 +26,12 @@ const texto1 = `乂  Y O U T U B E   M U S I C\n
         ✩ *Publicado ∙* ${vid.ago}\n
         ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`.trim()
 		
-await conn.sendButton2(m.chat, texto1, botname, res.videos[0].thumbnail, [
-	['Audio 📀', `${usedPrefix}mp3 ${text}`],
-	['Video 🎥', `${usedPrefix}mp4 ${text}`]
-  ], null, [['Canal', `${canal}`]], m)
+await conn.sendButton(m.chat, play, packname, thumbnail, [
+    ['💿 𝗠 𝗨 𝗦 𝗜 𝗖 𝗔  𝗠 𝗣 𝟯', `${usedPrefix}fgmp3 ${url}`],
+    ['📀 𝗩 𝗜 𝗗 𝗘 𝗢  𝗠 𝗣 𝟰', `${usedPrefix}fgmp4 ${url}`],
+['📁 𝗠 𝗨 𝗦 𝗜 𝗖   𝗗 𝗢 𝗖', `${usedPrefix}ytmp3doc ${url}`],
+['📁 𝗩 𝗜 𝗗 𝗘 𝗢  𝗗 𝗢 𝗖', `${usedPrefix}ytmp4doc ${url}`]
+  ], null, [['🐈‍⬛ 𝗖 𝗔 𝗡 𝗔 𝗟  𝗢 𝗙 𝗖', `${canal}`]], m)
 	  }
   
             if (command == "mp3") {
