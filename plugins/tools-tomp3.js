@@ -15,9 +15,9 @@ await m.react('✅')
 } catch {
 await m.react('✖️')
 }}
-handler.help = ['tomp3']
+handler.help = ['toaud']
 handler.tags = ['tools']
-handler.command = ['tomp3', 'toaudio', 'mp3'] 
+handler.command = ['toaud', 'toaud', 'toaud'] 
 handler.register = true
 
 export default handler
