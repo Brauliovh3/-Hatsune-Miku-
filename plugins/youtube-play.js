@@ -27,10 +27,10 @@ const texto1 = `乂  Y O U T U B E   M U S I C\n
         ✩ *Url ∙* ${'https://youtu.be/' + vid.videoId}\n`.trim()
 		
 await conn.sendButton2(m.chat, texto1, botname, res.videos[0].thumbnail, [
-	['Audio 📀', `${usedPrefix}mp3 ${null}`],
-	['Video 🎥', `${usedPrefix}mp4 ${null}`]
-	['Audiodoc', `${usedPrefix}mp3doc ${null}`]
-	['Videodoc', `${usedPrefix}mp4doc ${null}`]
+	['Audio 📀', `${usedPrefix}mp3 ${text}`],
+	['Video 🎥', `${usedPrefix}mp4 ${text}`]
+	['Audiodoc', `${usedPrefix}mp3doc ${url}`]
+	['Videodoc', `${usedPrefix}mp4doc ${url}`]
   ], null, [['Canal', `${canal}`]], m)
 	  }
   
