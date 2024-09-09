@@ -4,10 +4,9 @@ import fetch from 'node-fetch';
 
 
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
-  const tradutor = _translate.plugins.menu_audios
 
   try {
-    const pp = imagen4;
+    const pp = './storage/img/avatar_contact.jpg;
     // let vn = './storage/audio/01J673Y3TGCFF1D548242AX68Q.mp3'
     const img = './storage/img/catalogo.jpg';
     const d = new Date(new Date + 3600000);
