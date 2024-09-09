@@ -1,6 +1,7 @@
 import fg from 'api-dylux'
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import yts from 'yt-search'
+import { MessageType, Mimetype } from 'whatsapp-web.js'  // Asegúrate de instalar y configurar whatsapp-web.js
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     if (!text) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m)
@@ -8,48 +9,79 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     await m.react('🕓') // Indicador de "cargando"
     let res = await yts(text)
     let vid = res.videos[0]
+    
+    if (!vid) {
+        await m.react('✖️') // Indicador de fallo
+        return conn.reply(m.chat, `No se encontró ningún video para la búsqueda: *${text}*`, m)
+    }
+
     let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
     txt += `    ✩   *Título* : ${vid.title}\n`
     txt += `    ✩   *Duración* : ${vid.timestamp}\n`
     txt += `    ✩   *Visitas* : ${vid.views}\n`
     txt += `    ✩   *Autor* : ${vid.author.name}\n`
-    txt += `    ✩   *Publicado* : ${eYear(vid.ago)}\n`
+    txt += `    ✩   *Publicado* : ${formatTimeAgo(vid.ago)}\n`
     txt += `    ✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
     txt += `*- ↻ El archivo está siendo procesado. . .*\n`
 
     // Enviar la información básica
-    await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
+    await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m)
 
-    // Limite de tamaño en MB
-    let limit = 100 
+    // Crear botones
+    const buttons = [
+        { buttonId: 'download_audio', buttonText: { displayText: 'Descargar Audio (MP3)' }, type: 1 },
+        { buttonId: 'download_video', buttonText: { displayText: 'Descargar Video (MP4)' }, type: 1 },
+        { buttonId: 'download_audio_doc', buttonText: { displayText: 'Descargar Audio (MP3) - Documento' }, type: 1 },
+        { buttonId: 'download_video_doc', buttonText: { displayText: 'Descargar Video (MP4) - Documento' }, type: 1 }
+    ]
 
-    try {
-        // Descargar audio MP3
-        let audioMp3 = await fg.yta(vid.url, '128kbps')
-        let { dl_url: mp3Url, title: mp3Title, size: mp3Size } = audioMp3
-        if (mp3Size.split('MB')[0] < limit) {
-            await conn.sendMessage(m.chat, { document: { url: mp3Url }, caption: 'Descargar Audio (MP3)', mimetype: 'audio/mpeg', fileName: `${mp3Title}.mp3` }, { quoted: m })
-        }
-
-        // Descargar video MP4
-        let videoMp4 = await fg.ytv(vid.url, '360p')
-        let { dl_url: mp4Url, title: mp4Title, size: mp4Size } = videoMp4
-        if (mp4Size.split('MB')[0] < limit) {
-            await conn.sendMessage(m.chat, { document: { url: mp4Url }, caption: 'Descargar Video (MP4)', mimetype: 'video/mp4', fileName: `${mp4Title}.mp4` }, { quoted: m })
-        }
-
-        // Descargar Audio Documento
-        await conn.sendMessage(m.chat, { document: { url: mp3Url }, caption: 'Descargar Documento de Audio (MP3)', mimetype: 'audio/mpeg', fileName: `${mp3Title}.mp3` }, { quoted: m })
-
-        // Descargar Video Documento
-        await conn.sendMessage(m.chat, { document: { url: mp4Url }, caption: 'Descargar Documento de Video (MP4)', mimetype: 'video/mp4', fileName: `${mp4Title}.mp4` }, { quoted: m })
-
-        await m.react('✅') // Indicador de éxito
-    } catch (e) {
-        console.error(e)
-        await m.react('✖️') // Indicador de fallo
-        conn.reply(m.chat, `Ocurrió un error al procesar la solicitud.`, m)
+    const buttonMessage = {
+        text: 'Elige el formato de descarga:',
+        footer: 'Selecciona una opción para descargar el archivo.',
+        buttons: buttons,
+        headerType: 1
     }
+
+    await conn.sendMessage(m.chat, buttonMessage, { quoted: m })
+
+    // Manejo de la respuesta del usuario
+    conn.on('message', async message => {
+        if (message.hasOwnProperty('buttonId')) {
+            const buttonId = message.buttonId
+
+            try {
+                if (buttonId === 'download_audio') {
+                    let audioMp3 = await fg.yta(vid.url, '128kbps')
+                    let { dl_url: mp3Url, title: mp3Title, size: mp3Size } = audioMp3
+                    let mp3SizeMB = parseFloat(mp3Size.split('MB')[0])
+                    if (mp3SizeMB < limit) {
+                        await conn.sendMessage(m.chat, { document: { url: mp3Url }, caption: 'Descargar Audio (MP3)', mimetype: 'audio/mpeg', fileName: `${mp3Title}.mp3` }, { quoted: m })
+                    }
+                } else if (buttonId === 'download_video') {
+                    let videoMp4 = await fg.ytv(vid.url, '360p')
+                    let { dl_url: mp4Url, title: mp4Title, size: mp4Size } = videoMp4
+                    let mp4SizeMB = parseFloat(mp4Size.split('MB')[0])
+                    if (mp4SizeMB < limit) {
+                        await conn.sendMessage(m.chat, { document: { url: mp4Url }, caption: 'Descargar Video (MP4)', mimetype: 'video/mp4', fileName: `${mp4Title}.mp4` }, { quoted: m })
+                    }
+                } else if (buttonId === 'download_audio_doc') {
+                    let audioMp3 = await fg.yta(vid.url, '128kbps')
+                    let { dl_url: mp3Url, title: mp3Title } = audioMp3
+                    await conn.sendMessage(m.chat, { document: { url: mp3Url }, caption: 'Descargar Documento de Audio (MP3)', mimetype: 'audio/mpeg', fileName: `${mp3Title}.mp3` }, { quoted: m })
+                } else if (buttonId === 'download_video_doc') {
+                    let videoMp4 = await fg.ytv(vid.url, '360p')
+                    let { dl_url: mp4Url, title: mp4Title } = videoMp4
+                    await conn.sendMessage(m.chat, { document: { url: mp4Url }, caption: 'Descargar Documento de Video (MP4)', mimetype: 'video/mp4', fileName: `${mp4Title}.mp4` }, { quoted: m })
+                }
+
+                await m.react('✅') // Indicador de éxito
+            } catch (e) {
+                console.error(e)
+                await m.react('✖️') // Indicador de fallo
+                conn.reply(m.chat, `Ocurrió un error al procesar la solicitud.`, m)
+            }
+        }
+    })
 }
 
 handler.help = ['play'].map(v => v + " *<búsqueda>*")
@@ -60,59 +92,26 @@ handler.register = true
 export default handler
 
 // Función para transformar el tiempo
-function eYear(txt) {
-    if (!txt) {
-        return '×'
+function formatTimeAgo(txt) {
+    if (!txt) return '×'
+    const timeMappings = {
+        'month ago': 'mes',
+        'months ago': 'meses',
+        'year ago': 'año',
+        'years ago': 'años',
+        'hour ago': 'hora',
+        'hours ago': 'horas',
+        'minute ago': 'minuto',
+        'minutes ago': 'minutos',
+        'day ago': 'día',
+        'days ago': 'días',
     }
-    if (txt.includes('month ago')) {
-        var T = txt.replace("month ago", "").trim()
-        var L = 'hace '  + T + ' mes'
-        return L
-    }
-    if (txt.includes('months ago')) {
-        var T = txt.replace("months ago", "").trim()
-        var L = 'hace ' + T + ' meses'
-        return L
-    }
-    if (txt.includes('year ago')) {
-        var T = txt.replace("year ago", "").trim()
-        var L = 'hace ' + T + ' año'
-        return L
-    }
-    if (txt.includes('years ago')) {
-        var T = txt.replace("years ago", "").trim()
-        var L = 'hace ' + T + ' años'
-        return L
-    }
-    if (txt.includes('hour ago')) {
-        var T = txt.replace("hour ago", "").trim()
-        var L = 'hace ' + T + ' hora'
-        return L
-    }
-    if (txt.includes('hours ago')) {
-        var T = txt.replace("hours ago", "").trim()
-        var L = 'hace ' + T + ' horas'
-        return L
-    }
-    if (txt.includes('minute ago')) {
-        var T = txt.replace("minute ago", "").trim()
-        var L = 'hace ' + T + ' minuto'
-        return L
-    }
-    if (txt.includes('minutes ago')) {
-        var T = txt.replace("minutes ago", "").trim()
-        var L = 'hace ' + T + ' minutos'
-        return L
-    }
-    if (txt.includes('day ago')) {
-        var T = txt.replace("day ago", "").trim()
-        var L = 'hace ' + T + ' día'
-        return L
-    }
-    if (txt.includes('days ago')) {
-        var T = txt.replace("days ago", "").trim()
-        var L = 'hace ' + T + ' días'
-        return L
+
+    for (let [key, value] of Object.entries(timeMappings)) {
+        if (txt.includes(key)) {
+            let T = txt.replace(key, "").trim()
+            return `hace ${T} ${value}`
+        }
     }
     return txt
 }
