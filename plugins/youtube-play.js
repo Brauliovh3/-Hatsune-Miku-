@@ -29,13 +29,13 @@ const texto1 = `乂  Y O U T U B E   M U S I C\n
 await conn.sendButton2(m.chat, texto1, botname, res.videos[0].thumbnail, [
 	['Audio 📀', `${usedPrefix}mp3 ${null}`],
 	['Video 🎥', `${usedPrefix}mp4 ${null}`]
+	['Audiodoc', `${usedPrefix}mp3doc ${null}`]
 	['Videodoc', `${usedPrefix}mp4doc ${null}`]
-	['audiodoc', `${usedPrefix}mp3doc ${null}`]
   ], null, [['Canal', `${canal}`]], m)
 	  }
   
             if (command == "mp3") {
-	 if (!text) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, fake,)
+	 if (!text) return conn.reply(m.chat, `*🚩 Ingresa el titulo de un video o musica de YouTube.*`, m, rcanal,)
 		
        try {
     const res = await yts(text)
