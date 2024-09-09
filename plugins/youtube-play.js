@@ -29,8 +29,8 @@ const texto1 = `乂  Y O U T U B E   M U S I C\n
 await conn.sendButton2(m.chat, texto1, botname, res.videos[0].thumbnail, [
 	['Audio 📀', `${usedPrefix}mp3 ${text}`],
 	['Video 🎥', `${usedPrefix}mp4 ${text}`]
-	['Videodoc', `${usedPrefix}mp3doc ${text}`]
-	['audiodoc', `${usedPrefix}mp4doc ${text}`]
+	['Videodoc', `${usedPrefix}mp4doc ${text}`]
+	['audiodoc', `${usedPrefix}mp3doc ${text}`]
   ], null, [['Canal', `${canal}`]], m)
 	  }
   
