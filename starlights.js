@@ -194,7 +194,7 @@ async function clearTmp() {
 
 setInterval(async () => {
 	await clearTmp()
-	console.log(chalk.cyan(`Se limpio la carpeta tmp`))
+	console.log(chalk.red(`Se limpio la carpeta tmp`))
 }, 60000)
 
 function purgeSession() {
