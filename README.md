@@ -90,6 +90,8 @@ npm start
 
 ---------
 <img src= "https://qu.ax/pKeL.jpg">
+ </p>
+    <p align="center">
 
 ## <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Contacto" width="42" height="42"> Contacto
 
