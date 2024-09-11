@@ -86,13 +86,13 @@ if (methodCode && !conn.authState.creds.registered) {
     setTimeout(async () => {
         let codeBot = await conn.requestPairingCode(cleanedNumber);
         codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
-        let txt = ` –  *S E R B O T  -  S U B B O T*\n\n`
-            txt += `┌  ✩  *Usa este Código para convertirte en un Sub Bot*\n`
-            txt += `│  ✩  Pasos\n`
-            txt += `│  ✩  *1* : Haga click en los 3 puntos\n`
-            txt += `│  ✩  *2* : Toque dispositivos vinculados\n`
-            txt += `│  ✩  *3* : Selecciona *Vincular con el número de teléfono*\n` 
-            txt += `└  ✩  *4* : Escriba el Codigo\n\n`
+        let txt = ` –  *🌱S E R B O T  -  S U B B O T🌱*\n\n`
+            txt += `┌  💙  *Usa este Código para convertirte en un Sub Bot*\n`
+            txt += `│  💙  Pasos\n`
+            txt += `│  💙  *1* : Haga click en los 3 puntos\n`
+            txt += `│  💙  *2* : Toque dispositivos vinculados\n`
+            txt += `│  💙  *3* : Selecciona *Vincular con el número de teléfono*\n` 
+            txt += `└  💙  *4* : Escriba el Codigo\n\n`
             txt += `*Nota:* Este Código solo funciona en el número que lo solicito`
          await parent.reply(m.chat, txt, m, rcanal)
          await parent.reply(m.chat, codeBot, m, rcanal)
@@ -124,7 +124,7 @@ async function connectionUpdate(update) {
     if (connection == 'open') {
     conn.isInit = true
     global.conns.push(conn)
-    await parent.reply(m.chat, args[0] ? 'Conectado con exito' : 'Conectado exitosamente con WhatsApp\n\n*Nota:* Esto es temporal\nSi el Bot principal se reinicia o se desactiva, todos los sub bots tambien lo haran\n\nEl número del bot puede cambiar, guarda este enlace:\n*-* https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S', m, rcanal)
+    await parent.reply(m.chat, args[0] ? 'Conectado con exito' : 'Conectado exitosamente con WhatsApp\n\n*Nota:* Esto es temporal\nSi el Bot principal se reinicia o se desactiva, todos los sub bots tambien lo haran\n\nEl número del bot puede cambiar, guarda este enlace:\n*-* https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o', m, rcanal)
     await sleep(5000)
     if (args[0]) return
     
