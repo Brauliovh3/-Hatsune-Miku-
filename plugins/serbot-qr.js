@@ -63,12 +63,12 @@ async function serbot() {
         conn.isInit = true
       }
       if (qr) {
-        let txt = '`🧃 S E R B O T - S U B B O T`\n\n'
-            txt += '  *Escanea este QR para ser en un Sub Bot*\n'
-            txt += '  `Pasos para escanear`\n'
-            txt += '  `1` : Haga click en los 3 puntos\n'
-            txt += '  `2` : Toque dispositivos vinculados\n'
-            txt += '  `3` : Escanea este QR\n\n'
+        let txt = '`🌱 S E R B O T - S U B B O T 🌱`\n\n'
+            txt += ' 💙 *Escanea este QR para ser en un Sub Bot*\n'
+            txt += ' 💙 `Pasos para escanear`\n'
+            txt += ' 💙 `1` : Haga click en los 3 puntos\n'
+            txt += ' 💙 `2` : Toque dispositivos vinculados\n'
+            txt += ' 💙 `3` : Escanea este QR\n\n'
             txt += `> *Nota:* Este código QR expira en 30 segundos.`
         let sendQR = await parentw.sendFile(m.chat, await qrcode.toDataURL(qr, { scale: 8 }), "qrcode.png", txt, m, null, rcanal)
         
@@ -95,7 +95,7 @@ async function serbot() {
       if (connection == "open") {
         conn.isInit = true
         global.conns.push(conn)
-        await parentw.reply(m.chat, args[0] ? 'Conectado con exito' : 'Conectado exitosamente con WhatsApp\n\n*Nota:* Esto es temporal\nSi el Bot principal se reinicia o se desactiva, todos los sub bots tambien lo haran\n\nEl número del bot puede cambiar, guarda este enlace:\n*-* https://whatsapp.com/channel/0029VaBfsIwGk1FyaqFcK91S', m, rcanal)
+        await parentw.reply(m.chat, args[0] ? 'Conectado con exito' : 'Conectado exitosamente con WhatsApp\n\n*Nota:* Esto es temporal\nSi el Bot principal se reinicia o se desactiva, todos los sub bots tambien lo haran\n\nEl número del bot puede cambiar, guarda este enlace:\n*-* https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o', m, rcanal)
         await sleep(5000)
         if (args[0]) {
           return
