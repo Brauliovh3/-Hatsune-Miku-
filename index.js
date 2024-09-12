@@ -1,4 +1,4 @@
-console.log('✯ Iniciando ✯')
+console.log('01 Iniciando 01')
 
 import { join, dirname } from 'path'
 import { createRequire } from 'module';
@@ -39,7 +39,7 @@ async function start(files) {
     say([process.argv[0], ...args].join(' '), {
       font: 'console',
       align: 'center',
-      gradient: ['red', 'green']
+      gradient: ['red', 'cyan']
     });
     
     setupMaster({
@@ -82,4 +82,4 @@ async function start(files) {
   }
 }
 
-start(['starlights.js'])
+start(['(ㅎㅊDEPOOLㅊㅎ).js'])
