@@ -8,13 +8,13 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let chat = global.db.data.chats[m.chat]
 
   if (chat.bienvenida && m.messageStubType == 27) {
-    let bienvenida = `┌─💙 *${botname}* \n│「 Como ta muchacho 」\n└┬💙 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🌱  Bienvenido a\n   │🌱  ${groupMetadata.subject}\n   └───────────────┈ ⳹`
+    let bienvenida = `┌─💙 *${botname}* \n│「 Como ta muchacho 」\n└┬💙 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🌱  Bienvenido al grupo:\n   │🌱  ${groupMetadata.subject}\n   └───────────────┈ ⳹`
     
 await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img, canal, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 28) {
-    let bye = `┌─💙 *${botname}* \n│「 ADIOS 🏳️‍🌈 」\n└┬💙 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🏳️‍🌈 fuera Kbro🏳️‍🌈\n   │🏳️‍🌈 Jamás te quisimos aquí\n   └───────────────┈ ⳹`
+    let bye = `┌─💙 *${botname}* \n│「 ADIOS 🏳️‍🌈 」\n└┬💙 「 @${m.messageStubParameters[0].split`@`[0]} 」\n   │🏳️‍🌈 fuera Kbro🏳️‍🌈\n   │🏳️‍🌈 Y no vuelvas por aqui\n   └───────────────┈ ⳹`
 await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal, estilo)
   }
   
