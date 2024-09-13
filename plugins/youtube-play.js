@@ -27,7 +27,7 @@ await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal
 try {
 let yt = await fg.yta(vid.url, q)
 let { title, dl_url, size } = yt
-let limit = 100
+let limit = 200
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
 
@@ -37,7 +37,7 @@ await m.react('✅')
 try {
 let yt = await fg.ytmp3(vid.url, q)
 let { title, dl_url, size } = yt
-let limit = 100
+let limit = 200
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
        
@@ -86,7 +86,7 @@ await m.react('✖️')
 }}}
     
 if (feature == "mp3doc" || feature == "ytadoc" || feature == "audiodoc") {
-if (!inputs) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
+if (!inputs) return conn.reply(m.chat, `💙 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
 await m.react('🕓')
 let res = await yts(text)
 let vid = res.videos[0]
@@ -103,7 +103,7 @@ await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal
 try {
 let yt = await fg.yta(vid.url, q)
 let { title, dl_url, size } = yt
-let limit = 100
+let limit = 200
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
        
@@ -140,7 +140,7 @@ await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal
 try {
 let yt = await fg.ytv(vid.url, q)
 let { title, dl_url, size } = yt
-let limit = 300
+let limit = 600
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
        
@@ -150,7 +150,7 @@ await m.react('✅')
 try {
 let yt = await fg.ytmp4(vid.url, q)
 let { title, dl_url, size } = yt
-let limit = 300
+let limit = 600
        
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
        
