@@ -1,5 +1,5 @@
 {
-	"name": "Hatsune-Miku",
+	"name": "hatsune-miku",
 	"version": "6.0.0",
 	"description": "Simple WhatsApp Bot Multi Device",
 	"main": "main.js",
@@ -26,16 +26,16 @@
 		"MD",
 		"baileys-md"
 	],
-	"homepage": "https://github.com/Brauliovh3/Hatsune-Miku",
+	"homepage": "https://github.com/Brauliovh3/-Hatsune-Miku-",
 	"author": {
 		"name": "(ㅎㅊDEPOOLㅊㅎ)⁩"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Brauliovh3/Hatsune-Miku.git"
+		"url": "git+https://github.com/Brauliovh3/-Hatsune-Miku-.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Brauliovh3/Hatsune-Miku/issues"
+		"url": "https://github.com/Brauliovh3/-Hatsune-Miku-/issues"
 	},
 	"license": "GPL-3.0-or-later",
 	"dependencies": {
