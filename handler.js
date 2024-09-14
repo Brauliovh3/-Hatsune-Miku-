@@ -79,40 +79,35 @@ export async function handler(chatUpdate) {
                     bank: 0,
                     level: 0,
                 }
-            let chat = global.db.data.chats[m.chat]
-            if (typeof chat !== 'object')
-                global.db.data.chats[m.chat] = {}
-            if (chat) {
-                if (!('isBanned' in chat))
-                    chat.isBanned = false
-                if (!('bienvenida' in chat))
-                    chat.bienvenida = true 
-                if (!('antiLink' in chat))
-                    chat.antiLink = false
-                if (!('onlyLatinos' in chat))
-                    chat.onlyLatinos = false
-                 if (!('nsfw' in chat))
-                    chat.nsfw = false
-                if (!isNumber(chat.expired))
-                    chat.expired = 0
-            } else
-                global.db.data.chats[m.chat] = {
-                    isBanned: false,
-                    bienvenida: true,
-                    antiLink: false,
-                    onlyLatinos: false,
-                    nsfw: false, 
-                    expired: 0, 
-                }
-            var settings = global.db.data.settings[this.user.jid]
-            if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
-            if (settings) {
-                if (!('self' in settings)) settings.self = false
-                if (!('autoread' in settings)) settings.autoread = false
-            } else global.db.data.settings[this.user.jid] = {
-                self: false,
-                autoread: false,
-                status: 0
+        let chat = global.DATABASE._data.chats[m.chat]
+        if (typeof chat !== 'object') global.DATABASE._data.chats[m.chat] = {}
+        if (chat) {
+          if (!('isBanned' in chat)) chat.isBanned = false
+          if (!('welcome' in chat)) chat.welcome = false
+          if (!('detect' in chat)) chat.detect = false
+          if (!('sWelcome' in chat)) chat.sWelcome = ''
+          if (!('sBye' in chat)) chat.sBye = ''
+          if (!('sPromote' in chat)) chat.sPromote = ''
+          if (!('sDemote' in chat)) chat.sDemote = ''
+          if (!('delete' in chat)) chat.delete = false
+          if (!('antidelete' in chat)) chat.antidelete = false
+          if (!('antiLink' in chat)) chat.antiLink = false
+          if (!('antiLink2' in chat)) chat.antiLink2 = false
+          if (!'antiToxic' in chat) chat.antiToxic = false
+        } else global.DATABASE._data.chats[m.chat] = {
+          isBanned: false,
+          welcome: true, 
+          detect: false,
+          sWelcome: "",
+          sBye: '',
+          sPromote: '',
+          sDemote: '',
+          delete: false,
+          antidelete: false,
+          antiLink: false,
+          antiLink2: false,
+          antiToxic: false,
+        }  status: 0
             }
         } catch (e) {
             console.error(e)
