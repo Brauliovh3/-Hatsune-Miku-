@@ -2,8 +2,8 @@ import fetch from 'node-fetch';
 const handler = async (m, {text, usedPrefix, command}) => {
 let porn = 'https://qu.ax/bXMB.webp'
 let porn2 = 'https://qu.ax/TxtQ.webp'
-if (!db.data.chats[m.chat].nsfw && m.isGroup) return conn.sendFile(m.chat, [porn, porn2].getRandom(), 'sticker.webp', '', m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: `ᴸᵒˢ ᶜᵒᵐᵃⁿᵈᵒ ʰᵒʳⁿʸ ᵉˢᵗᵃ ᵈᵉˢᵃᶜᵗᶦᵛᵃᵈᵒ ˢᶦ ᵉʳᵉˢ ᵃᵈᵐᶦⁿ ʸ ᵠᵘᶦᵉʳᵉ ᵃᶜᵗᶦᵛᵃʳˡᵒˢ ᵘˢᵃʳ:`, body: '#enable nsfw', mediaType: 2, sourceUrl: md, thumbnail: imagen3}}}, { quoted: m, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100})   
-  if (!text) throw `*⚠️ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command} Con mi prima*`;
+if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `💙 Calmao masturbin admin debe .on *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando */nsfw on*`, m, rcanal)
+  if (!text) throw `*💙 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳𝙴 𝚄𝚂𝙾 𝙳𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 ${usedPrefix + command} Con mi prima*`;
   try {
     const vids_ = {
       from: m.sender,
@@ -23,7 +23,7 @@ if (!db.data.chats[m.chat].nsfw && m.isGroup) return conn.sendFile(m.chat, [porn
       const linkXXX = v.link;
       vids_.urls.push(linkXXX);
       cap += `*[${count}]*\n• *🎬 Titulo:* ${v.title}\n• *🔗 Link:* ${v.link}\n• *❗ Info:* ${v.info}`;
-      cap += '\n\n' + '💔💔💔💔💔💔💔💔💔💔💔💔' + '\n\n';
+      cap += '\n\n' + '💦💦💦💦💦💦💦💦💦💦💦💦' + '\n\n';
       count++;
     }
     m.reply(cap);
