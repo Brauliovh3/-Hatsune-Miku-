@@ -12,7 +12,7 @@ let { name, limit, exp, banned, lastclaim, registered, regTime, age, level } = g
 let { min, xp, max } = levelling.xpRange(level, global.multiplier)
 let username = conn.getName(who)
 let str = `
-*_ミ💖 Hola ${username} 💖彡_*
+*_ミ🩵 Hola ${username} 🩵彡_*
 
 *<MENU DE AUDIOS/>*
 - Escribe las palabras/frases tal como estan, no hace falta poner ningun prefijo (#, ., *, etc) 
@@ -48,7 +48,6 @@ let str = `
 ° ඬ⃟🔊 _La biblia_
 ° ඬ⃟🔊 _Onichan_
 ° ඬ⃟🔊 _Bot puto_
-° ඬ⃟🔊 _NeKosmic Bot_
 ° ඬ⃟🔊 _Siuuu_
 ° ඬ⃟🔊 _Rawr_
 ° ඬ⃟🔊 _UwU_
