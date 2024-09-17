@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 let who = m.sender
 let pp = await(await fetch('https://i.imgur.com/oHrJTtq.jpg')).buffer()
 let kai = await(await fetch('https://i.imgur.com/oHrJTtq.jpg')).buffer()
-let text = `*https://github.com/BrunoSobrino/ShadowBotV3*`.trim()
+let text = `*https://github.com/Brauliovh3/-Hatsune-Miku-*`.trim()
 conn.reply(m.chat, text, m, { thumbnail: kai, contextInfo: {
 mentionedJid: [who],
 externalAdReply: {
