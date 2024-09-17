@@ -6,19 +6,15 @@ let handler = async m => m.reply(`
 *┏ ┅ ━━━━━━━━━━━━━ ┅ ━*
 *┇       「 DONAR 」*
 *┣ ┅ ━━━━━━━━━━━━━ ┅ ━*
-*┃  👑Hola persona hermosa👑*
+*┃  🩵Hola persona hermosa🩵*
 *┃  🔥Aquí tienes algunos datos🔥*
 *┃  🍷para que puedas apoyar <3🍷*
 *┃*
-*┃ -   CLABE: 646180192175788481* 
-*┃ -   BANCO: STP* 
-*┃ -   BENEFICIARIO: ¥Alpha-ØFC¥* 
-*┃ -   CONCEPTO: APOYO*  
-*┃➤ PayPal: https://www.paypal.me/NeKosmicOFC*
-*┃➤ PayPal2: https://www.paypal.me/TheShadowBrokers133*
+*┃➤ PayPal: https://www.paypal.com/invoice/p/#XJWXKUSE26SVC7V8*
+*┃➤ PayPal2: https://www.paypal.com/invoice/p/#XJWXKUSE26SVC7V8*
 *┃❖ Contáctame si necesitas otros*
 *┃datos y para darte las gracias <3*
-*┃❖ wa.me/+34623442554*
+*┃❖ wa.me/+51988514570*
 *┗ ┅ ━━━━━━━━━━━━━ ┅ ━*
 `.trim()) 
 handler.command = /^(dona|donar|apoyar|dardinero|apoyo)$/i
