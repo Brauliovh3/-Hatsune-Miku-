@@ -16,12 +16,12 @@ let res = await yts(text)
 let vid = res.videos[0]
 let q = '128kbps'
 let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
-	txt += `	✩   *Título* : ${vid.title}\n`
-	txt += `	✩   *Duración* : ${vid.timestamp}\n`
-	txt += `	✩   *Visitas* : ${vid.views}\n`
-	txt += `	✩   *Autor* : ${vid.author.name}\n`
-	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
-	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
+	txt += `	💙  *Título* : ${vid.title}\n`
+	txt += `	💙   *Duración* : ${vid.timestamp}\n`
+	txt += `	💙   *Visitas* : ${vid.views}\n`
+	txt += `	💙   *Autor* : ${vid.author.name}\n`
+	txt += `	💙   *Publicado* : ${eYear(vid.ago)}\n`
+	txt += `	💙   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
 	txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
 try {
@@ -48,18 +48,18 @@ await m.react('✖️')
 }}}
         
 if (feature == "mp4" || feature == "ytv" || feature == "video" || feature == "video") {
-if (!inputs) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
+if (!inputs) return conn.reply(m.chat, `💙 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
 await m.react('🕓')
 let res = await yts(text)
 let vid = res.videos[0]
 let q = '360p'
 let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
-	txt += `	✩   *Título* : ${vid.title}\n`
-	txt += `	✩   *Duración* : ${vid.timestamp}\n`
-	txt += `	✩   *Visitas* : ${vid.views}\n`
-	txt += `	✩   *Autor* : ${vid.author.name}\n`
-	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
-	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
+	txt += `	💙   *Título* : ${vid.title}\n`
+	txt += `	💙   *Duración* : ${vid.timestamp}\n`
+	txt += `	💙   *Visitas* : ${vid.views}\n`
+	txt += `	💙   *Autor* : ${vid.author.name}\n`
+	txt += `	💙   *Publicado* : ${eYear(vid.ago)}\n`
+	txt += `	💙   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
 	txt += `*- ↻ El video se esta enviando espera un momento, soy lenta. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, rcanal)
 try {
@@ -86,18 +86,18 @@ await m.react('✖️')
 }}}
     
 if (feature == "mp3doc" || feature == "ytadoc" || feature == "audiodoc") {
-if (!inputs) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
+if (!inputs) return conn.reply(m.chat, `💙 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
 await m.react('🕓')
 let res = await yts(text)
 let vid = res.videos[0]
 let q = '128kbps'
 let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
-	txt += `	✩   *Título* : ${vid.title}\n`
-	txt += `	✩   *Duración* : ${vid.timestamp}\n`
-	txt += `	✩   *Visitas* : ${vid.views}\n`
-	txt += `	✩   *Autor* : ${vid.author.name}\n`
-	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
-	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
+	txt += `	💙   *Título* : ${vid.title}\n`
+	txt += `	💙   *Duración* : ${vid.timestamp}\n`
+	txt += `	💙   *Visitas* : ${vid.views}\n`
+	txt += `	💙   *Autor* : ${vid.author.name}\n`
+	txt += `	💙   *Publicado* : ${eYear(vid.ago)}\n`
+	txt += `	💙   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
 	txt += `*- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
 try {
@@ -123,18 +123,18 @@ await m.react('✖️')
     }}}
     
 if (feature == "mp4doc" || feature == "ytvdoc" || feature == "videodoc" || feature == "videodoc") {
-if (!inputs) return conn.reply(m.chat, `🚩 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
+if (!inputs) return conn.reply(m.chat, `💙 Ingresa el título de un video o canción de YouTube.\n\n*Ejemplo:*\n*${usedPrefix + command}* Alan Walker - Sing Me To Sleep`, m, rcanal)
 await m.react('🕓')
 let res = await yts(text)
 let vid = res.videos[0]
 let q = '360p'
 let txt = `*乂  Y O U T U B E  -  P L A Y*\n\n`
-	txt += `	✩   *Título* : ${vid.title}\n`
-	txt += `	✩   *Duración* : ${vid.timestamp}\n`
-	txt += `	✩   *Visitas* : ${vid.views}\n`
-	txt += `	✩   *Autor* : ${vid.author.name}\n`
-	txt += `	✩   *Publicado* : ${eYear(vid.ago)}\n`
-	txt += `	✩   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
+	txt += `	💙   *Título* : ${vid.title}\n`
+	txt += `	💙   *Duración* : ${vid.timestamp}\n`
+	txt += `	💙   *Visitas* : ${vid.views}\n`
+	txt += `	💙   *Autor* : ${vid.author.name}\n`
+	txt += `	💙   *Publicado* : ${eYear(vid.ago)}\n`
+	txt += `	💙   *Url* : ${'https://youtu.be/' + vid.videoId}\n\n`
 	txt += `*- ↻ El video se esta enviando espera un momento, soy lenta. . .*`
 await conn.sendFile(m.chat, vid.thumbnail, 'thumbnail.jpg', txt, m, null, rcanal)
 try {
