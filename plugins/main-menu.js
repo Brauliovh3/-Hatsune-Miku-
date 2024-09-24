@@ -28,7 +28,7 @@ let tags = {
 
 const defaultMenu = {
   before: `
-*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
+*─ׄ─ׅ─ׄ─💙─ׄ─ׅ─ׄ─💙─ׄ─ׅ─ׄ─💙─ׄ─ׅ─ׄ─💙─ׄ─ׅ─ׄ─*
 
 “ Hola *%name* soy *Hatsune Miku*, %greeting ”
  💙🌱██▓▒­░⡷⠂𝙷𝚊𝚝𝚜𝚞𝚗𝚎⠐⢾░▒▓██🌱💙
@@ -162,19 +162,19 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
   
-    let pp = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp2 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp3 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp4 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp5 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp6 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp7 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp8 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp9 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp10 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp11 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp12 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
-    let pp13 = 'https://telegra.ph/file/9264f9db26b4f660fdf30.mp4'
+    let pp = './storage/img/miniurl.mp4'
+    let pp2 = './storage/img/miniurl.mp4'
+    let pp3 = './storage/img/miniurl.mp4'
+    let pp4 = './storage/img/miniurl.mp4'
+    let pp5 = './storage/img/miniurl.mp4'
+    let pp6 = './storage/img/miniurl.mp4'
+    let pp7 = './storage/img/miniurl.mp4'
+    let pp8 = './storage/img/miniurl.mp4'
+    let pp9 = './storage/img/miniurl.mp4'
+    let pp10 = './storage/img/miniurl.mp4'
+    let pp11 = './storage/img/miniurl.mp4'
+    let pp12 = './storage/img/miniurl.mp4'
+    let pp13 = './storage/img/miniurl.mp4'
     let pp14 = 'https://tinyurl.com/24pfv4g5'
     let pp15 = 'https://tinyurl.com/27qhgeaa'
     let img = await (await fetch(`https://i.ibb.co/8NBHFtN/file.jpg`)).buffer()
