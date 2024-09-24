@@ -1,8 +1,8 @@
 import Starlights from '@StarlightsTeam/Scraper'
 
 let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `🚩 El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando */nsfw on*`, m, rcanal)
-if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Xnxx*`, m, rcanal)
+if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `💙 El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando */on nsfw*`, m, rcanal)
+if (!args[0]) return conn.reply(m.chat, `💙 Ingresa el enlace del vídeo de Xnxx*`, m, rcanal)
 
 let user = global.db.data.users[m.sender]
 await m.react('🕓')
