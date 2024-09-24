@@ -6,7 +6,7 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D*
 
-1- https://chat.whatsapp.com/DiiCQW3hdEH6vXUkC4kgFG
+1- https://chat.whatsapp.com/IfqpqPrj9f57xRL2pHiTbb
 *💙* ${group}
 
 *─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
