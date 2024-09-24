@@ -16,7 +16,7 @@ let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para con
 Canal :
 *💙* ${canal}
 
-> 🚩 ${textbot}`
+> 💙 ${textbot}`
 await conn.sendFile(m.chat, img, "Thumbnail.jpg", txt, m, null, rcanal)
 }
 handler.help = ['grupos']
