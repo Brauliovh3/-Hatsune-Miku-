@@ -21,9 +21,9 @@ let thumbnail = await yt.thumbnail
 let img = await (await fetch(`${thumbnail}`)).buffer()  
 if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
 	let txt = '`乂  Y O U T U B E  -  M P 3 D O C`\n\n'
-       txt += `	✩   *Titulo* : ${title}\n`
-       txt += `	✩   *Calidad* : ${q}\n`
-       txt += `	✩   *Tamaño* : ${size}\n\n`
+       txt += `	💙   *Titulo* : ${title}\n`
+       txt += `	💙   *Calidad* : ${q}\n`
+       txt += `	💙   *Tamaño* : ${size}\n\n`
        txt += `> *- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
 await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
@@ -38,9 +38,9 @@ let { thumbnail, url } = vid
 let img = await (await fetch(`${vid.thumbnail}`)).buffer()  
 if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
 	let txt = '`乂  Y O U T U B E  -  M P 3 D O C`\n\n'
-       txt += `	✩   *Titulo* : ${title}\n`
-       txt += `	✩   *Calidad* : ${q}\n`
-       txt += `	✩   *Tamaño* : ${size}\n\n`
+       txt += `	💙   *Titulo* : ${title}\n`
+       txt += `	💙   *Calidad* : ${q}\n`
+       txt += `	💙   *Tamaño* : ${size}\n\n`
        txt += `> *- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
 await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
@@ -53,9 +53,9 @@ let { title, dl_url, size, thumb } = yt
 let img = await (await fetch(`${thumb}`)).buffer()
 if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m, rcanal).then(_ => m.react('✖️'))
 	let txt = '`乂  Y O U T U B E  -  M P 3 D O C`\n\n'
-       txt += `	✩   *Titulo* : ${title}\n`
-       txt += `	✩   *Calidad* : ${q}\n`
-       txt += `	✩   *Tamaño* : ${size}\n\n`
+       txt += `	💙   *Titulo* : ${title}\n`
+       txt += `	💙   *Calidad* : ${q}\n`
+       txt += `	💙   *Tamaño* : ${size}\n\n`
        txt += `> *- ↻ El audio se esta enviando espera un momento, soy lenta. . .*`
 await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
