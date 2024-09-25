@@ -32,7 +32,7 @@ global.prems = []
 
 global.packname = ``
 global.author = '{\n "bot": {\n   "name": "HATSUNE MIKU",\n     "author": "(ㅎㅊDEPOOLㅊㅎ)",\n   "status_bot": "active"\n }\n}'
-global.wait = '🐢 *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛᴀ... ฅ^•ﻌ•^ฅ*'
+global.wait = '👌 *Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ, sᴏʏ ʟᴇɴᴛᴀ... ฅ^•ﻌ•^ฅ*'
 global.botname = '💙HATSUNE MIKU💙'
 global.textbot = `Powered By (ㅎㅊDEPOOLㅊㅎ)`
 global.listo = '*Aqui tiene ฅ^•ﻌ•^ฅ*'
