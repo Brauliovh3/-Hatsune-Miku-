@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, isOwner, usedPrefix, command }) => {
     let chats = global.db.data.chats[res]
     if (!chats) chats = global.db.data.chats[res] = {}
     if (expired) chats.expired = +new Date() + expired * 1000 * 60 * 60 * 24
-    let pp = './storage/img/miniurl.mp4'
+    let pp = 'https://qu.ax/OaOR.mp4'
    await conn.sendMessage(res, { video: { url: pp }, gifPlayback: true, caption: 'Ya llego Hatsune Miku tratame con cuidado.', mentions: [m.sender] }, { quoted: estilo })
 }
 handler.help = ['join *<link> <días>*']
