@@ -6,9 +6,9 @@ let handler = async (m, { conn }) => {
     let user = global.db.data.users[m.sender];
 
     const audioMap = {
-      'miku': './media/miku.mp3',
+      'Miku': './media/miku.mp3',
       'Mine': './media/miku2.mp3',
-      'elcorazone': './media/elcorazon.mp3',
+      'Baneado': './media/baneado.mp3',
       'ayuda': './media/ayuda.mp3',
       'gey': './media/gey.mp3',
       'negra': './media/negra.mp3',
@@ -50,14 +50,14 @@ let handler = async (m, { conn }) => {
 
 // Ayuda y comandos reconocidos
 handler.help = [
-  'Miku brasileña', 'World is Mine', 'ayuda', 'elcorazon', 'gey', 'negra', 
+  'Miku', 'Mine', 'ayuda', 'baneado', 'gey', 'negra', 
   'callate', 'super albañil', 'peruano', 'viva venezuela', 'que me importa', 
   'mondongo', 'bebitofiufiu', 'lala', 'dios', 'sad', 'risa', 'motivar', 
   'se unió usando el enlace de invitación del este grupo', 'calculadora', 'tengo novia'
 ];
 
 // Prefijos y comandos
-handler.customPrefix = /^(miku|Mine|ayuda|elcorazon|gey|negra|callate|super albañil|peruano|viva venezuela|que me importa|mondongo|bebitofiufiu|lala|dios|sad|jaja|motivar|calculadora|tengo novia|se unió usando el enlace de invitación del este grupo)/i;
+handler.customPrefix = /^(Miku|Mine|Baneado|elcorazon|gey|negra|callate|super albañil|peruano|viva venezuela|que me importa|mondongo|bebitofiufiu|lala|dios|sad|jaja|motivar|calculadora|tengo novia|se unió usando el enlace de invitación del este grupo)/i;
 handler.command = new RegExp;
 handler.tags = ['Audios Miku'];
 
