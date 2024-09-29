@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
     });
 };
 
-handler.customPrefix = /Miku2|miku2/; 
+handler.customPrefix = /Mine|mine/; 
 handler.command = new RegExp(); // Esto puede ser opcional
 
 export default handler; // Asegúrate de exportar el handler
