@@ -5,27 +5,27 @@ let handler = async (m, { conn }) => {
   let user = global.db.data.users[m.sender];
 
   const audioMap = {
-    'linda': './goku/hdpta.mp3',
-    'sin sentimiento': './goku/elcorazon.mp3',
-    'elcorazone': './goku/elcorazon.mp3',
-    'ayuda': './goku/ayuda.mp3',
-    'gey': './goku/gey.mp3', 
-    'negra': './goku/negra.mp3', 
-    'callate': './goku/callate.mp3', 
-    'super albañil': './goku/super albañil.mp3', 
-    'peruano': './goku/peruano.mp3', 
-    'viva venezuela': './goku/viva venezuela.mp3', 
-    'que me importa': './goku/que me importa.mp3', 
-    'mondongo': './goku/mondongo.mp3',
-    'bebitofiufiu': './goku/bebitofiufiu.mp3',
-    'lala': './goku/lala.mp3',
-    'dios': './goku/dios.mp3', 
-    'sad': './goku/sad.mp3', 
-    'risa': './goku/jaja.mp3', 
-    'motivar': './goku/motivar.mp3',
-    'se unió usando el enlace de invitación del este grupo': './goku/se unió usando el enlace de invitación del este grupo.mp3',
-    'calculadora': './goku/calculadora.mp3', 
-    'tengo novia': './goku/tengo novia.mp3'
+    'linda': './media/hdpta.mp3',
+    'sin sentimiento': './media/elcorazon.mp3',
+    'elcorazone': './media/elcorazon.mp3',
+    'ayuda': './media/ayuda.mp3',
+    'gey': './media/gey.mp3', 
+    'negra': './media/negra.mp3', 
+    'callate': './media/callate.mp3', 
+    'super albañil': './media/super albañil.mp3', 
+    'peruano': './media/peruano.mp3', 
+    'viva venezuela': './media/viva venezuela.mp3', 
+    'que me importa': './media/que me importa.mp3', 
+    'mondongo': './media/mondongo.mp3',
+    'bebitofiufiu': './media/bebitofiufiu.mp3',
+    'lala': './media/lala.mp3',
+    'dios': './media/dios.mp3', 
+    'sad': './media/sad.mp3', 
+    'risa': './media/jaja.mp3', 
+    'motivar': './media/motivar.mp3',
+    'se unió usando el enlace de invitación del este grupo': './media/se unió usando el enlace de invitación del este grupo.mp3',
+    'calculadora': './media/calculadora.mp3', 
+    'tengo novia': './media/tengo novia.mp3'
     
   };
 
