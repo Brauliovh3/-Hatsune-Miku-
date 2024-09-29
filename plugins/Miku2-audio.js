@@ -1,4 +1,5 @@
-export const handler = async (m, { conn }) => {
+import fs from 'fs';
+let handler = async (m, { conn }) => {
     let vn = './media/miku2.mp3';
     conn.sendFile(m.chat, vn, 'miku2.mp3', null, m, true, {
         type: 'audioMessage',
