@@ -9,7 +9,7 @@
         <img src= "https://telegra.ph/file/5e7042bf17cde23989e71.jpg">
     </p>
     <p align="center">
-        <a href="#"><img title="simple-whatsapp-bot" src="https://img.shields.io/badge/-SIMPLE--WHATSAPP--BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+        <a href="#"><img title="simple-whatsapp-bot" src="https://img.shields.io/badge/-SIMPLE--WHATSAPP--BOT-green?colorA=%21ff0000&colorB=%21017e40&style=for-the-badge"></a>
     </p>
     <p>
         <a href="https://qu.ax/HWNA.jpg"><img title="Author"    src="https://img.shields.io/badge/Author-(ㅎㅊDEPOOLㅊㅎ)-turquoise.svg?style=for-the-badge&logo=github"></a>
