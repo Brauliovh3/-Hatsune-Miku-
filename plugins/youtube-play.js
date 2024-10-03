@@ -22,9 +22,9 @@ let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 
     let { title, thumbnail, ago, timestamp, views, videoId, url } = play;
 
-    let txt = '```𝚈𝚘𝚞𝚃𝚞𝚋𝚎 𝙳𝚎𝚜𝚌𝚊𝚛𝚐𝚊𝚜```\n';
+    let txt = '```Hatsune Miku Download```\n';
 
-    txt += '┗☵☵☵☵☵☵☵≪🌱🌱🌱≫☵☵☵☵☵☵┛\n';
+    txt += '┗☵☵☵☵☵☵☵🌱🌱🌱☵☵☵☵☵☵┛\n';
 
     txt += `💙 *𝚃𝚒𝚝𝚞𝚕𝚘* : _${title}_\n`;
 
@@ -54,7 +54,7 @@ let handler = async (m, { conn, command, args, text, usedPrefix }) => {
 
         ], null, [['Canal', 'https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o']], m);
     
-    await m.react('✅');
+    await m.react('☑️');
 
 };
 
