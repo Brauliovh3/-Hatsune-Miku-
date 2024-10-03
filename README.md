@@ -115,6 +115,6 @@ npm start
 <div align="center">
   <h1 align="center">Editor y Propietario de la Bot</h1>
 
-<a href="https://github.com/AikerDev"><img src="https://github.com/Brauliovh3.png" width="300" height="300" alt="(ㅎㅊDEPOOLㅊㅎ)"/></a>
+<a href="https://github.com/Brauliovh3"><img src="https://github.com/Brauliovh3.png" width="300" height="300" alt="(ㅎㅊDEPOOLㅊㅎ)"/></a>
 
 `© Hatsune Miku / BY (ㅎㅊDEPOOLㅊㅎ)`
