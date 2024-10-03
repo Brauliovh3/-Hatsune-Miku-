@@ -112,6 +112,17 @@ npm start
 * <a href="https://chat.whatsapp.com/ElP65wJ4eVCKg1QIqw8lyg"><img alt="Group" src="https://img.shields.io/badge/Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 ---------
+## Repo Stats 🔭
+
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=Brauliovh3&repo=-Hatsune-Miku-&theme=chartreuse-dark)
+
+---------
+
+## <img src="https://raw.githubusercontent.com/vilcajoal/vilcajoal/master/assets/octocat-anime.gif" alt="Github" width="44" height="44"> Github Stats
+
+![github stats](https://github-readme-stats.vercel.app/api?username=Brauliovh3&show_icons=true&theme=chartreuse-dark)
+![github toplang](https://github-readme-stats.vercel.app/api/top-langs/?username=Brauliovh3&layout=compact&theme=chartreuse-dark)
+
 <div align="center">
   <h1 align="center">Editor y Propietario de la Bot</h1>
 
