@@ -32,7 +32,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 }
 
 handler.help = ['acariciar @tag'];
-handler.tags = ['fun'];
+handler.tags = ['game'];
 handler.command = ['pat','acariciar','caricia','Acariciar'];
 handler.group = true;
 
