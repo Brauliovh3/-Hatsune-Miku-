@@ -29,7 +29,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 handler.help = ['love @tag'];
 handler.tags = ['game'];
-handler.command = ['love','amar','Amar','obsecion'];
+handler.command = ['love','amar','Amar','obsesion'];
 handler.group = true;
 
 export default handler;
