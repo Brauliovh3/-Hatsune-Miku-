@@ -26,6 +26,7 @@ let handler = async (m, { conn }) => {
 }
 
 handler.help = ['aburrido'];
+handler.tags = ['game'];
 handler.command = ['bored', 'aburrido'];
 handler.group = true;
 
