@@ -38,7 +38,7 @@ let pp6 = "https://telegra.ph/file/33332f613e1ed024be870.mp4"
   }
 };
 handler.help = ['hug'].map((v) => v + ' <@usuario>');
-handler.tags = ['fun'];
+handler.tags = ['game'];
 handler.command = /^(abrazar)$/i;
 handler.register = true;
 export default handler;
