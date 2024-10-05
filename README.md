@@ -72,7 +72,7 @@ npm update
 npm start
 ```
 
-- Después de eso te aparecerά un código **QR** lo escaneas con el Whatsapp web y listo
+- Después de eso te aparecerά un código **QR** lo escaneas con el Whatsapp web o la opcion de 8 digitos lo pones y listo
 
 ---------
 
