@@ -22,16 +22,6 @@ Tu Nokia 2.0 ya no aguanta?, pues te tengo la solucion👇.
 - Panel: [Panel CorinPlus](https://ctrl.corinplus.com//)
 - Canal de WhatsApp: [【 🌱 CorinPlus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
 - Grupo de WhatsApp: [🌱Group CorinPlus 🌱](https://chat.whatsapp.com/K235lkvaGvlGRQKYm26xZP)
-
----------
-
-## <img src="https://i0.wp.com/i230.photobucket.com/albums/ee124/joaclint/joaclint_istgud/ruedas.gif" alt="Herramientas" width="35" height="35"> Herramientas
-
-```bash
-> Termux
-> WhatsApp
-> 2 celulares o PC
-```
 ---------
 
 ## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="Características" width="42" height="42"> Características
