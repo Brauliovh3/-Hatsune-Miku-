@@ -36,8 +36,6 @@ Tu Nokia 2.0 ya no aguanta?, pues te tengo la solucion👇.
 > WhatsApp
 > 2 celulares o PC
 ```
-- Descarga termux dando clic [aqui](https://f-droid.org/repo/com.termux_118.apk)
-
 ---------
 
 ## <img src="https://i.giphy.com/media/nWGRHBnAl5Kmc/giphy.gif" alt="Instalacion" width="40" height="40"> Instalación en [termux](https://f-droid.org/repo/com.termux_118.apk)
@@ -55,7 +53,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/Brauliovh3/Hatsune-Miku.git && cd -Hatsune-Miku-
+git clone https://github.com/Brauliovh3/-Hatsune-Miku-.git && cd -Hatsune-Miku-
 ```
 
 ```bash
