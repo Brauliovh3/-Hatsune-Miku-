@@ -13,7 +13,7 @@ let handler = async (m, { conn }) => {
       'gey': './media/marica.mp3',
       'ara': './media/Ara.mp3',
       'callate': './media/callate.mp3',
-      'super albañil': './media/super albañil.mp3',
+      'bañate': './media/banate.mp3',
       'peruano': './media/peruano.mp3',
       'viva venezuela': './media/viva venezuela.mp3',
       'que me importa': './media/que me importa.mp3',
@@ -51,12 +51,12 @@ let handler = async (m, { conn }) => {
 // Ayuda y comandos reconocidos
 handler.help = [
   'miku', 'mine', 'ayuda', 'baneado', 'gey', 'ara', 
-  'callate', 'super albañil', 'peruano', 'viva venezuela', 'que me importa', 
+  'bañate', 'super albañil', 'peruano', 'viva venezuela', 'que me importa', 
   'mondongo', 'bebitofiufiu', 'lala', 'dios', 'sad', 'risa', 'motivar', 'calculadora', 'tengo novia'
 ];
 
 // Prefijos y comandos, corregido el prefijo personalizado
-handler.customPrefix = /^(miku|mine|baneado|ayuda|gey|ara|callate|super albañil|peruano|viva venezuela|que me importa|mondongo|bebitofiufiu|lala|dios|sad|risa|motivar|calculadora|tengo novia)$/i;
+handler.customPrefix = /^(miku|mine|baneado|ayuda|gey|ara|bañate|super albañil|peruano|viva venezuela|que me importa|mondongo|bebitofiufiu|lala|dios|sad|risa|motivar|calculadora|tengo novia)$/i;
 handler.command = new RegExp;
 handler.tags = ['Audios Miku'];
 
