@@ -6,9 +6,9 @@ let handler = async (m, { conn }) => {
     let user = global.db.data.users[m.sender];
 
     const audioMap = {
-      'Miku': './media/miku.mp3',
-      'Mine': './media/miku2.mp3',
-      'Baneado': './media/baneado.mp3',
+      'miku': './media/miku.mp3',
+      'mine': './media/miku2.mp3',
+      'baneado': './media/baneado.mp3',
       'ayuda': './media/ayuda.mp3',
       'gey': './media/marica.mp3',
       'negra': './media/negra.mp3',
@@ -31,7 +31,7 @@ let handler = async (m, { conn }) => {
 
     // Buscar si alguna clave coincide con el texto recibido
     for (let key in audioMap) {
-      if (text.includes(key)) {
+      if (text.includes(key.toLowerCase())) {  // Comparar en minúsculas
         let filePath = audioMap[key];
         if (fs.existsSync(filePath)) {
           // Enviar el archivo de audio como mensaje de voz
@@ -50,13 +50,13 @@ let handler = async (m, { conn }) => {
 
 // Ayuda y comandos reconocidos
 handler.help = [
-  'Miku', 'Mine', 'ayuda', 'baneado', 'gey', 'negra', 
+  'miku', 'mine', 'ayuda', 'baneado', 'gey', 'negra', 
   'callate', 'super albañil', 'peruano', 'viva venezuela', 'que me importa', 
   'mondongo', 'bebitofiufiu', 'lala', 'dios', 'sad', 'risa', 'motivar', 'calculadora', 'tengo novia'
 ];
 
-// Prefijos y comandos
-handler.customPrefix = /^(Miku|Mine|Baneado|elcorazon|gey|negra|callate|super albañil|peruano|viva venezuela|que me importa|mondongo|bebitofiufiu|lala|dios|sad|jaja|motivar|calculadora|tengo novia|/i;
+// Prefijos y comandos, corregido el prefijo personalizado
+handler.customPrefix = /^(miku|mine|baneado|ayuda|gey|negra|callate|super albañil|peruano|viva venezuela|que me importa|mondongo|bebitofiufiu|lala|dios|sad|risa|motivar|calculadora|tengo novia)$/i;
 handler.command = new RegExp;
 handler.tags = ['Audios Miku'];
 
