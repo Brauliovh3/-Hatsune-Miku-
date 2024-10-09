@@ -12,13 +12,13 @@ let handler = async (m, { conn }) => {
       'ayuda': './media/ayuda.mp3',
       'gey': './media/marica.mp3',
       'ara': './media/Ara.mp3',
-      'callate': './media/callate.mp3',
+      'bot': './media/bot.mp3',
       'bañate': './media/banate.mp3',
-      'peruano': './media/peruano.mp3',
-      'viva venezuela': './media/viva venezuela.mp3',
-      'que me importa': './media/que me importa.mp3',
-      'mondongo': './media/mondongo.mp3',
-      'bebitofiufiu': './media/bebitofiufiu.mp3',
+      'buenos días': './media/Buenos-dias-2.mp3',
+      'felíz cumpleaños': './media/Feliz-cumple.mp3',
+      'invocar': './media/Invocar.mp3',
+      'hentai': './media/hentai.mp3',
+      'nose': './media/maau1.mp3',
       'lala': './media/lala.mp3',
       'dios': './media/dios.mp3',
       'sad': './media/sad.mp3',
@@ -51,14 +51,13 @@ let handler = async (m, { conn }) => {
 // Ayuda y comandos reconocidos
 handler.help = [
   'miku', 'mine', 'ayuda', 'baneado', 'gey', 'ara', 
-  'bañate', 'super albañil', 'peruano', 'viva venezuela', 'que me importa', 
-  'mondongo', 'bebitofiufiu', 'lala', 'dios', 'sad', 'risa', 'motivar', 'calculadora', 'tengo novia'
+  'bañate', 'bot', 'buenos días', 'felíz cumpleaños', 'invocar', 
+  'hentai', 'nose', 'lala', 'dios', 'sad', 'risa', 'motivar', 'calculadora', 'tengo novia'
 ];
 
 // Prefijos y comandos, corregido el prefijo personalizado
-handler.customPrefix = /^(miku|mine|baneado|ayuda|gey|ara|bañate|super albañil|peruano|viva venezuela|que me importa|mondongo|bebitofiufiu|lala|dios|sad|risa|motivar|calculadora|tengo novia)$/i;
+handler.customPrefix = /^(miku|mine|baneado|ayuda|gey|ara|bañate|bot|buenos días|felíz cumpleaños|invocar|hentai|nose|lala|dios|sad|risa|motivar|calculadora|tengo novia)$/i;
 handler.command = new RegExp;
 handler.tags = ['Audios Miku'];
 
 export default handler;
-
