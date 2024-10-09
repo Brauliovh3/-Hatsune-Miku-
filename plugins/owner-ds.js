@@ -20,15 +20,15 @@ const handler = async (m, { conn, usedPrefix }) => {
       }
     }
     if (filesDeleted === 0) {
-      await conn.sendMessage(m.chat, {text: 'No se encontró ningún archivo que incluya la ID del chat'}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: '💙 No se encontró ningún archivo que incluya la ID del chat'}, {quoted: m});
     } else {
-      await conn.sendMessage(m.chat, {text: `*Se eliminaron ${filesDeleted} archivos de sesión*`}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: `*💙 Se eliminaron ${filesDeleted} archivos de sesión*`}, {quoted: m});
     }
   } catch (err) {
-    console.error('Error al leer la carpeta o los archivos de sesión:', err);
-    await conn.sendMessage(m.chat, {text: 'Ocurrió un error al eliminar los archivos de sesión'}, {quoted: m});
+    console.error('💙 Error al leer la carpeta o los archivos de sesión:', err);
+    await conn.sendMessage(m.chat, {text: '💙 Ocurrió un error al eliminar los archivos de sesión'}, {quoted: m});
   }
-  await conn.sendMessage(m.chat, {text: '*Hola, ¿ya me pueden ver?*'}, {quoted: m});
+  await conn.sendMessage(m.chat, {text: '*💙 Hola, ¿ya me pueden ver?*'}, {quoted: m});
 };
 handler.help = ['ds']
 handler.tags = ['group']
