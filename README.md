@@ -14,12 +14,12 @@
 
 ---------
 Tu Nokia 2.0 ya no aguanta?, pues te tengo la solucion👇.
-### 🌱 Usa: CorinPlus el mejor Host del Mundo 🌱
+### 🌱 Usa: Sky Plus el plus ultra que necesitas!! 🌱
 
-<a href="dash.corinplus.com"><img src="https://telegra.ph/file/cfef603c01b6ec05f7459.png" width="400" height="400" alt="CorinPlus"/></a>
+<a href="https://dash.skyultraplus.com"><img src="https://telegra.ph/file/cfef603c01b6ec05f7459.png" width="400" height="400" alt="CorinPlus"/></a>
 
-- Dash: [Dash CorinPlus](https://dash.corinplus.com/home)
-- Panel: [Panel CorinPlus](https://ctrl.corinplus.com//)
+- Dash: [Dash Sky Plus](https://dash.skyultraplus.com/)
+- Panel: [Panel Sky Plus](https://panel.skyultraplus.com/)
 - Canal de WhatsApp: [【 🌱 CorinPlus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
 - Grupo de WhatsApp: [🌱Group CorinPlus 🌱](https://chat.whatsapp.com/K235lkvaGvlGRQKYm26xZP)
 ---------
