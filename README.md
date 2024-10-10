@@ -16,7 +16,7 @@
 Tu Nokia 2.0 ya no aguanta?, pues te tengo la solucion👇.
 ### 🌱 Usa: Sky Plus el plus ultra que necesitas!! 🌱
 
-<a href="https://dash.skyultraplus.com"><img src="https://telegra.ph/file/cfef603c01b6ec05f7459.png" width="400" height="400" alt="CorinPlus"/></a>
+<a href="https://dash.skyultraplus.com"><img src="https://i.ibb.co/SynCj3P/file.jpg" width="400" height="400" alt="CorinPlus"/></a>
 
 - Dash: [Dash Sky Plus](https://dash.skyultraplus.com/)
 - Panel: [Panel Sky Plus](https://panel.skyultraplus.com/)
