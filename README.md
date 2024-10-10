@@ -14,7 +14,7 @@
 
 ---------
 Tu Nokia 2.0 ya no aguanta?, pues te tengo la solucion👇.
-### 🌱 Usa: Sky Plus el plus ultra que necesitas!! 🌱
+### 🌱 Usa: Sky Plus el Ultra Plus que necesitas!! 🌱
 
 <a href="https://dash.skyultraplus.com"><img src="https://i.ibb.co/SynCj3P/file.jpg" width="400" height="400" alt="CorinPlus"/></a>
 
