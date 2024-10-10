@@ -20,8 +20,8 @@ Tu Nokia 2.0 ya no aguanta?, pues te tengo la solucion👇.
 
 - Dash: [Dash Sky Plus](https://dash.skyultraplus.com/)
 - Panel: [Panel Sky Plus](https://panel.skyultraplus.com/)
-- Canal de WhatsApp: [【 🌱 CorinPlus channel 🌱 】](https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g)
-- Grupo de WhatsApp: [🌱Group CorinPlus 🌱](https://chat.whatsapp.com/K235lkvaGvlGRQKYm26xZP)
+- Canal de WhatsApp: [【 🌱 Sky Plus channel 🌱 】](https://whatsapp.com/channel/0029VamOVm08fewr5jix2Z3t)
+- Grupo de WhatsApp: [🌱Group Sky Plus 🌱](https://chat.whatsapp.com/K235lkvaGvlGRQKYm26xZP)
 ---------
 
 ## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="Características" width="42" height="42"> Características
