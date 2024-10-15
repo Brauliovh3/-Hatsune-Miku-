@@ -1,6 +1,7 @@
 
 <h1 align="center">‧ 💙HATSUNE-MIKU-CHANNEL💙
 </p>
+        [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=turquoise&lines=Bienvenido+al+Repositorio;🩵Hatsune+-+Miku+-+Bot🩵;Gracias+por+preferirnos;Creado+por+(ㅎㅊDEPOOLㅊㅎ);🩵+Cyberpunk)](https://git.io/typing-svg)
 <p>
         <img src= "https://telegra.ph/file/5e7042bf17cde23989e71.jpg">
     </p>
