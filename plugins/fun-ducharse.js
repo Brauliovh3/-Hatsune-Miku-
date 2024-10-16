@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 }
 
 handler.help = ['bathe'];
-handler.tags = ['nakano react'];
+handler.tags = ['fun'];
 handler.command = ['bathe', 'bañarse','ducharse','Bañarse','Ducharse'];
 handler.group = true;
 
