@@ -15,7 +15,7 @@ try { res = await tts(text, lang) }
 catch (e) {
 m.reply(e + '')
 text = args.join(' ')
-if (!text) throw `🚩 Ingresa un texto junto al comando.`
+if (!text) throw `💙 Ingresa un texto junto al comando.`
 res = await tts(text, defaultLang)
 } finally {
 if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true)    
