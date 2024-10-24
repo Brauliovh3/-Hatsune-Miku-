@@ -13,15 +13,7 @@
     <p>
 
 ---------
-Tu Nokia 2.0 ya no aguanta?, pues te tengo la solucion👇.
-### 🌱 Usa: Sky Plus el Ultra Plus que necesitas!! 🌱
-
-<a href="https://dash.skyultraplus.com"><img src="https://i.ibb.co/SynCj3P/file.jpg" width="400" height="400" alt="CorinPlus"/></a>
-
-- Dash: [Dash Sky Plus](https://dash.skyultraplus.com/)
-- Panel: [Panel Sky Plus](https://panel.skyultraplus.com/)
-- Canal de WhatsApp: [【 🌱 Sky Plus channel 🌱 】](https://whatsapp.com/channel/0029VamOVm08fewr5jix2Z3t)
-- Grupo de WhatsApp: [🌱Group Sky Plus 🌱](https://chat.whatsapp.com/K235lkvaGvlGRQKYm26xZP)
+NO HAY COLABORACION CON NINGUN HOST
 ---------
 
 ## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="Características" width="42" height="42"> Características
